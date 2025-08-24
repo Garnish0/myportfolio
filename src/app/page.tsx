@@ -1,11 +1,8 @@
-import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
-import { RainbowButton } from "@/components/magicui/rainbow-button";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Dropdown } from "@/components/ui/dropdown";
 import { DATA } from "@/data/resume";
@@ -227,7 +224,7 @@ export default function Page() {
             </div>
           </BlurFade>
         </div>
-        <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-8">
+        <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-24">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground">placeholder 3</p>
@@ -285,6 +282,21 @@ export default function Page() {
         <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-8">
           <BlurFade delay={BLUR_FADE_DELAY * 15}>
             <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">placeholder 6</p>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
+                <video 
+                  src="/Isshowcase/sat2.mp4" 
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </div>
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 15.5}>
+            <div className="space-y-3">
               <p className="text-sm text-muted-foreground">placeholder 5</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <video 
@@ -298,12 +310,26 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 15.5}>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-24">
+          <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">placeholder 6</p>
+              <p className="text-sm text-muted-foreground">placeholder 7</p>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
+                <img 
+                  src="/Isshowcase/magic1.png" 
+                  alt="Magic 1" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 16.5}>
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">placeholder 8</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
                 <video 
-                  src="/Isshowcase/sat2.mp4" 
+                  src="/Isshowcase/magic2.mp4" 
                   className="w-full h-full object-cover"
                   autoPlay
                   loop
