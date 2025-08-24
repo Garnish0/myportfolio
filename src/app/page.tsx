@@ -205,9 +205,9 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 12}>
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground">placeholder 1</p>
-              <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
                 <img 
-                  src="/Isshowcase/hex4.png" 
+                  src="/Isshowcase/hex5.png" 
                   alt="Placeholder 1" 
                   className="w-full h-full object-cover"
                 />
@@ -217,11 +217,40 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 12.5}>
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground">placeholder 2</p>
-              <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <img 
-                  src="/Isshowcase/hex5.png" 
+                  src="/Isshowcase/hex4.png" 
                   alt="Placeholder 2" 
                   className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </BlurFade>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-8">
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">placeholder 3</p>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
+                <img 
+                  src="/Isshowcase/sat1.png" 
+                  alt="Placeholder 3" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 13.5}>
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">placeholder 4</p>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
+                <video 
+                  src="/Isshowcase/sat2.mp4" 
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                 />
               </div>
             </div>
