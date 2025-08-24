@@ -117,7 +117,7 @@ export const DATA = {
       href: "https://magicbird.ai",
       badges: [],
       location: "Paris, FR (remote)",
-      title: "Co-Founder",
+      title: "AI Automation Expert",
       logoUrl: "/Magicbird.svg",
       start: "Apr 2025",
       end: "Present",
@@ -200,6 +200,14 @@ export const DATA = {
     },
   ],
   certifications: [
+    {
+      name: "GenAI Practice",
+      issuer: "NVIDIA",
+      date: "Jul 2025",
+      credentialId: "AI Basics to GenAI Practice - Course Completion Certificate",
+      logoUrl: "/NVIDIA.png",
+      href: "https://www.nvidia.com/en-us/training/",
+    },
     {
       name: "Data Science: Machine Learning",
       issuer: "Harvard Online",

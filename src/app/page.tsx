@@ -287,10 +287,13 @@ export default function Page() {
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground">placeholder 5</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
-                <img 
-                  src="/Isshowcase/sat1.png" 
-                  alt="Placeholder 5" 
+                <video 
+                  src="/Isshowcase/sat5.mp4" 
                   className="w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                 />
               </div>
             </div>
