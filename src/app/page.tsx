@@ -244,13 +244,10 @@ export default function Page() {
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground">placeholder 4</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
-                <video 
-                  src="/Isshowcase/sat2.mp4" 
+                <img 
+                  src="/Isshowcase/satsbanner.png" 
+                  alt="Placeholder 4" 
                   className="w-full h-full object-cover"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
                 />
               </div>
             </div>
@@ -285,6 +282,35 @@ export default function Page() {
             </div>
           </div>
         </BlurFade>
+        <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-8">
+          <BlurFade delay={BLUR_FADE_DELAY * 15}>
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">placeholder 5</p>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
+                <img 
+                  src="/Isshowcase/sat1.png" 
+                  alt="Placeholder 5" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 15.5}>
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">placeholder 6</p>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
+                <video 
+                  src="/Isshowcase/sat2.mp4" 
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </div>
+            </div>
+          </BlurFade>
+        </div>
       </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
