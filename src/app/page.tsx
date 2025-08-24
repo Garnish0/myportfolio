@@ -400,8 +400,8 @@ export default function Page() {
               <p className="text-sm text-muted-foreground">placeholder 12</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <img 
-                  src="/Isshowcase/placeholder12.png" 
-                  alt="Placeholder 12" 
+                  src="/Isshowcase/trilo1.png" 
+                  alt="Trilo 1" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -411,13 +411,10 @@ export default function Page() {
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground">placeholder 13</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
-                <video 
-                  src="/Isshowcase/placeholder13.mp4" 
+                <img 
+                  src="/Isshowcase/trilo2.png" 
+                  alt="Trilo 2" 
                   className="w-full h-full object-cover"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
                 />
               </div>
             </div>
