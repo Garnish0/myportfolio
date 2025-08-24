@@ -359,11 +359,11 @@ export default function Page() {
         <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-8">
           <BlurFade delay={BLUR_FADE_DELAY * 17.5}>
             <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">placeholder 9</p>
+              <p className="text-sm text-muted-foreground">placeholder 10</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <img 
-                  src="/Isshowcase/magic9.png" 
-                  alt="Magic 9" 
+                  src="/Isshowcase/magic10.png" 
+                  alt="Magic 10" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -371,11 +371,11 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 18}>
             <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">placeholder 10</p>
+              <p className="text-sm text-muted-foreground">placeholder 9</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <img 
-                  src="/Isshowcase/magic10.png" 
-                  alt="Magic 10" 
+                  src="/Isshowcase/magic9.png" 
+                  alt="Magic 9" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -389,6 +389,35 @@ export default function Page() {
                   src="/Isshowcase/magic11.png" 
                   alt="Magic 11" 
                   className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </BlurFade>
+        </div>
+        <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-24">
+          <BlurFade delay={BLUR_FADE_DELAY * 19}>
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">placeholder 12</p>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
+                <img 
+                  src="/Isshowcase/placeholder12.png" 
+                  alt="Placeholder 12" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 19.5}>
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">placeholder 13</p>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
+                <video 
+                  src="/Isshowcase/placeholder13.mp4" 
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                 />
               </div>
             </div>
