@@ -436,6 +436,54 @@ export default function Page() {
             </div>
           </div>
         </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 20.5}>
+          <div className="flex justify-center mt-8">
+            <div>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '1170px', height: '700px' }}>
+                <video 
+                  src="/Isshowcase/trilo02.mp4" 
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </div>
+            </div>
+          </div>
+        </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 21}>
+          <div className="flex justify-center mt-8">
+            <div>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '1170px', height: '700px' }}>
+                <video 
+                  src="/Isshowcase/trilo03.mp4" 
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </div>
+            </div>
+          </div>
+        </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 21.5}>
+          <div className="flex justify-center mt-8">
+            <div>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '1170px', height: '700px' }}>
+                <video 
+                  src="/Isshowcase/trilo4.mp4" 
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </div>
+            </div>
+          </div>
+        </BlurFade>
       </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
@@ -443,7 +491,7 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-base">
-                  My Projects
+                  And a lot more...
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Check out my latest work
