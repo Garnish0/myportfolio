@@ -272,6 +272,19 @@ export default function Page() {
             </div>
           </div>
         </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 14.5}>
+          <div className="flex justify-center mt-8">
+            <div>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '1170px', height: '700px' }}>
+                <img 
+                  src="/Isshowcase/sat4.png" 
+                  alt="Large placeholder image"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </BlurFade>
       </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
