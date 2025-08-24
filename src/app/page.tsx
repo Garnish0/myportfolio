@@ -199,6 +199,23 @@ export default function Page() {
             </div>
           </div>
         </BlurFade>
+        <BlurFade delay={BLUR_FADE_DELAY * 11.8}>
+          <div className="flex justify-center mt-8">
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground text-center">cradle ui</p>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '1170px', height: '700px' }}>
+                <video 
+                  src="/Isshowcase/hex3.mp4" 
+                  className="w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </div>
+            </div>
+          </div>
+        </BlurFade>
       </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
