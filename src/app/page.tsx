@@ -187,8 +187,7 @@ export default function Page() {
         </div>
         <BlurFade delay={BLUR_FADE_DELAY * 11.8}>
           <div className="flex justify-center mt-8">
-            <div className="space-y-3">
-              <p className="text-sm text-muted-foreground text-center">cradle ui</p>
+            <div>
               <div className="rounded-lg border overflow-hidden" style={{ width: '1170px', height: '700px' }}>
                 <video 
                   src="/Isshowcase/hex3.mp4" 
