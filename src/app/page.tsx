@@ -207,7 +207,7 @@ export default function Page() {
               <p className="text-sm text-muted-foreground">placeholder 1</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <img 
-                  src="/placeholder1.jpg" 
+                  src="/Isshowcase/hex4.png" 
                   alt="Placeholder 1" 
                   className="w-full h-full object-cover"
                 />
@@ -219,7 +219,7 @@ export default function Page() {
               <p className="text-sm text-muted-foreground">placeholder 2</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
                 <img 
-                  src="/placeholder2.jpg" 
+                  src="/Isshowcase/hex5.png" 
                   alt="Placeholder 2" 
                   className="w-full h-full object-cover"
                 />
