@@ -158,6 +158,48 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section id="image-placeholders">
+        <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center">
+          <BlurFade delay={BLUR_FADE_DELAY * 10.5}>
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">hexmount logo</p>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
+                <img 
+                  src="/Isshowcase/hex1.png" 
+                  alt="Cradle logo" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">hexmount website (+implementation)</p>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
+                <img 
+                  src="/Isshowcase/hex2.png" 
+                  alt="Showcase image" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </BlurFade>
+        </div>
+        <BlurFade delay={BLUR_FADE_DELAY * 11.5}>
+          <div className="flex justify-center mt-8">
+            <div className="rounded-lg border overflow-hidden" style={{ width: '1170px', height: '700px' }}>
+              <video 
+                src="/Isshowcase/hex3.mp4" 
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
+            </div>
+          </div>
+        </BlurFade>
+      </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11.5}>
