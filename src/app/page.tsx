@@ -201,6 +201,32 @@ export default function Page() {
             </div>
           </div>
         </BlurFade>
+        <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-8">
+          <BlurFade delay={BLUR_FADE_DELAY * 12}>
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">placeholder 1</p>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
+                <img 
+                  src="/placeholder1.jpg" 
+                  alt="Placeholder 1" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 12.5}>
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">placeholder 2</p>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
+                <img 
+                  src="/placeholder2.jpg" 
+                  alt="Placeholder 2" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </BlurFade>
+        </div>
       </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
