@@ -205,7 +205,7 @@ export default function Page() {
         </div>
       </section>
       <section id="image-placeholders">
-        <div className="flex flex-col lg:flex-row gap-6 w-full max-w-6xl mx-auto justify-center items-center px-4">
+        <div className="flex flex-col lg:flex-row gap-6 w-full max-w-6xl mx-auto justify-center items-center px-4 mb-16">
           <BlurFade delay={BLUR_FADE_DELAY * 10.5}>
             <div className="space-y-3 w-full lg:w-auto">
               <p className="text-sm text-muted-foreground">hexmount logo</p>
@@ -232,7 +232,7 @@ export default function Page() {
           </BlurFade>
         </div>
         <BlurFade delay={BLUR_FADE_DELAY * 11.8}>
-          <div className="flex justify-center mt-16 px-4">
+          <div className="flex justify-center mt-16 px-4 mb-16">
             <div>
               <div className="rounded-lg border overflow-hidden w-full sm:w-[1170px] h-64 sm:h-[700px]">
                 <video 
@@ -247,7 +247,7 @@ export default function Page() {
             </div>
           </div>
         </BlurFade>
-        <div className="flex flex-col lg:flex-row gap-6 w-full max-w-6xl mx-auto justify-center items-center mt-16 px-4">
+        <div className="flex flex-col lg:flex-row gap-6 w-full max-w-6xl mx-auto justify-center items-center mt-16 px-4 mb-16">
           <BlurFade delay={BLUR_FADE_DELAY * 12}>
             <div className="space-y-3 w-full lg:w-auto">
               <p className="text-sm text-muted-foreground">Hexmount Branding Assets</p>
@@ -273,7 +273,7 @@ export default function Page() {
             </div>
           </BlurFade>
         </div>
-        <div className="flex flex-col lg:flex-row gap-6 w-full max-w-6xl mx-auto justify-center items-center mt-16 px-4">
+        <div className="flex flex-col lg:flex-row gap-6 w-full max-w-6xl mx-auto justify-center items-center mt-16 px-4 mb-16">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="space-y-3 w-full lg:w-auto">
               <p className="text-sm text-muted-foreground">satstream logo</p>
@@ -300,7 +300,7 @@ export default function Page() {
           </BlurFade>
         </div>
         <BlurFade delay={BLUR_FADE_DELAY * 14}>
-          <div className="flex justify-center mt-16 px-4">
+          <div className="flex justify-center mt-16 px-4 mb-16">
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground text-center">Website Dashboard and SDK developement and implentation</p>
               <div className="rounded-lg border overflow-hidden w-full sm:w-[1170px] h-64 sm:h-[700px]">
@@ -317,7 +317,7 @@ export default function Page() {
           </div>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 14.5}>
-          <div className="flex justify-center mt-16 px-4">
+          <div className="flex justify-center mt-16 px-4 mb-16">
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground text-center">Pitch Deck material</p>
               <div className="rounded-lg border overflow-hidden w-full sm:w-[1170px] h-64 sm:h-[700px]">
@@ -330,7 +330,7 @@ export default function Page() {
             </div>
           </div>
         </BlurFade>
-        <div className="flex flex-col lg:flex-row gap-6 w-full max-w-6xl mx-auto justify-center items-center mt-16 px-4">
+        <div className="flex flex-col lg:flex-row gap-6 w-full max-w-6xl mx-auto justify-center items-center mt-16 px-4 mb-16">
           <BlurFade delay={BLUR_FADE_DELAY * 15}>
             <div className="space-y-3 w-full lg:w-auto">
               <p className="text-sm text-muted-foreground">Custom 3D assets and integration</p>
@@ -362,7 +362,7 @@ export default function Page() {
             </div>
           </BlurFade>
         </div>
-        <div className="flex flex-col lg:flex-row gap-6 w-full max-w-6xl mx-auto justify-center items-center mt-16 px-4">
+        <div className="flex flex-col lg:flex-row gap-6 w-full max-w-6xl mx-auto justify-center items-center mt-16 px-4 mb-16">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3 w-full lg:w-auto">
               <p className="text-sm text-muted-foreground">magicbird logo</p>
@@ -392,7 +392,7 @@ export default function Page() {
           </BlurFade>
         </div>
         <BlurFade delay={BLUR_FADE_DELAY * 17}>
-          <div className="flex justify-center mt-16 px-4">
+          <div className="flex justify-center mt-16 px-4 mb-16">
             <div>
               <div className="rounded-lg border overflow-hidden w-full sm:w-[1170px] h-64 sm:h-[700px]">
                 <video 
@@ -407,7 +407,7 @@ export default function Page() {
             </div>
           </div>
         </BlurFade>
-        <div className="flex flex-col gap-6 w-full mx-auto justify-center items-center mt-16 px-4">
+        <div className="flex flex-col gap-6 w-full mx-auto justify-center items-center mt-16 px-4 mb-16">
           <BlurFade delay={BLUR_FADE_DELAY * 17}>
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground">AI workflow automation</p>
@@ -421,7 +421,7 @@ export default function Page() {
             </div>
           </BlurFade>
         </div>
-        <div className="flex flex-col md:flex-row gap-6 w-full max-w-6xl mx-auto justify-center items-center mt-16 px-4">
+        <div className="flex flex-col md:flex-row gap-6 w-full max-w-6xl mx-auto justify-center items-center mt-16 px-4 mb-16">
           <BlurFade delay={BLUR_FADE_DELAY * 17.5}>
             <div className="space-y-3 w-full md:w-auto">
               <p className="text-sm text-muted-foreground">Branding assets</p>
@@ -459,7 +459,7 @@ export default function Page() {
             </div>
           </BlurFade>
         </div>
-        <div className="flex flex-col lg:flex-row gap-6 w-full max-w-6xl mx-auto justify-center items-center mt-16 px-4">
+        <div className="flex flex-col lg:flex-row gap-6 w-full max-w-6xl mx-auto justify-center items-center mt-16 px-4 mb-16">
           <BlurFade delay={BLUR_FADE_DELAY * 18.7}>
             <div className="space-y-3 w-full lg:w-auto">
               <p className="text-sm text-muted-foreground">trilo logo</p>
@@ -486,7 +486,7 @@ export default function Page() {
           </BlurFade>
         </div>
         <BlurFade delay={BLUR_FADE_DELAY * 20}>
-          <div className="flex justify-center mt-16 px-4">
+          <div className="flex justify-center mt-16 px-4 mb-16">
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground text-center">website design and developement</p>
               <div className="rounded-lg border overflow-hidden w-full sm:w-[1170px] h-64 sm:h-[700px]">
@@ -503,7 +503,7 @@ export default function Page() {
           </div>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 20.5}>
-          <div className="flex justify-center mt-16 px-4">
+          <div className="flex justify-center mt-16 px-4 mb-16">
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground text-center">IOS app design and AI integration</p>
               <div className="rounded-lg border overflow-hidden w-full sm:w-[1170px] h-64 sm:h-[700px]">
@@ -520,7 +520,7 @@ export default function Page() {
           </div>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 21}>
-          <div className="flex justify-center mt-16 px-4">
+          <div className="flex justify-center mt-16 px-4 mb-16">
             <div>
               <div className="rounded-lg border overflow-hidden w-full sm:w-[1170px] h-64 sm:h-[700px]">
                 <video 
@@ -536,7 +536,7 @@ export default function Page() {
           </div>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 21.5}>
-          <div className="flex justify-center mt-16 px-4">
+          <div className="flex justify-center mt-16 px-4 mb-16">
             <div>
               <div className="rounded-lg border overflow-hidden w-full sm:w-[1170px] h-64 sm:h-[700px]">
                 <video 
