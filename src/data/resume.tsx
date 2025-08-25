@@ -235,7 +235,7 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
+          type: "Visit Website",
           href: "https://www.magicbird.io/",
           icon: <Icons.globe className="size-3" />,
         },
@@ -261,7 +261,7 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
+          type: "Visit Website",
           href: "https://www.hexmount.io/",
           icon: <Icons.globe className="size-3" />,
         },
@@ -287,7 +287,7 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
+          type: "Visit Website",
           href: "https://www.trilo.chat/",
           icon: <Icons.globe className="size-3" />,
         },
@@ -313,7 +313,7 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
+          type: "Visit Website",
           href: "https://www.satstream.io/",
           icon: <Icons.globe className="size-3" />,
         },
