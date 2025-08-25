@@ -29,9 +29,9 @@ export default function Page() {
                 </BlurFade>
                 <BlurFadeText
                   delay={BLUR_FADE_DELAY}
-                  className="text-2xl sm:text-3xl font-bold tracking-tight"
+                  className="text-[24px] font-bold tracking-tight"
                   yOffset={8}
-                  text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+                  text={`Hi, I'm ${DATA.name} 👋`}
                 />
               </div>
               <BlurFadeText
@@ -201,7 +201,7 @@ export default function Page() {
         <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-8">
           <BlurFade delay={BLUR_FADE_DELAY * 12}>
             <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">placeholder 1</p>
+              <p className="text-sm text-muted-foreground">Hexmount Branding Assets</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
                 <img 
                   src="/Isshowcase/hex5.png" 
@@ -227,7 +227,7 @@ export default function Page() {
         <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-24">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">placeholder 3</p>
+              <p className="text-sm text-muted-foreground">satstream logo</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <img 
                   src="/Isshowcase/sat1.png" 
@@ -239,7 +239,7 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 13.5}>
             <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">placeholder 4</p>
+              <p className="text-sm text-muted-foreground">satstream branding</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
                 <img 
                   src="/Isshowcase/satsbanner.png" 
@@ -356,7 +356,7 @@ export default function Page() {
             </div>
           </div>
         </BlurFade>
-        <div className="flex flex-col gap-6 w-full mx-auto justify-center items-center mt-24">
+        <div className="flex flex-col gap-6 w-full mx-auto justify-center items-center mt-8">
           <BlurFade delay={BLUR_FADE_DELAY * 17}>
             <div className="space-y-3">
               <p className="text-sm text-muted-foreground">Magic 12</p>
@@ -402,32 +402,6 @@ export default function Page() {
                 <img 
                   src="/Isshowcase/magic11.png" 
                   alt="Magic 11" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </BlurFade>
-        </div>
-        <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-24">
-          <BlurFade delay={BLUR_FADE_DELAY * 19}>
-            <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">placeholder 12</p>
-              <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
-                <img 
-                  src="/Isshowcase/trilo1.png" 
-                  alt="Trilo 1" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 19.5}>
-            <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">placeholder 13</p>
-              <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
-                <img 
-                  src="/Isshowcase/trilo2.png" 
-                  alt="Trilo 2" 
                   className="w-full h-full object-cover"
                 />
               </div>

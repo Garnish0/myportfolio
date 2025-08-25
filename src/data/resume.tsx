@@ -8,7 +8,7 @@ export const DATA = {
   location: "Paris, FR",
   locationLink: "https://www.google.com/maps/place/paris",
   description:
-    "What I do is more than design – I help design and develop apps, dashboards, software, and create generative AI videos and content",
+    "I plan, design, and develop apps, dashboards, software, and create generative AI videos and content – bringing ideas to life through strategic thinking and hands-on development",
   summary:
     "I'm passionate about turning ideas into reality through code and creativity. Whether you need a sleek mobile app, an intuitive dashboard, custom software, or AI-powered content and videos, I bring designs to life with clean code and user-focused thinking. Since 2018, I've helped businesses across industries build digital solutions that actually work – from initial concept to final deployment. My approach combines technical expertise with creative problem-solving to deliver products that users love and businesses rely on.",
   avatarUrl: "/img/projects/me.png",
@@ -22,7 +22,8 @@ export const DATA = {
         { name: "Claude 4", icon: "anthropic" },
                 { name: "Midjourney", icon: "midjourney" },
         { name: "Hugging Face", icon: "huggingface" },
-        { name: "Prompt Engineering", icon: "sparkles" }
+        { name: "Prompt Engineering", icon: "openai" },
+        { name: "Context Engineering", icon: "code" }
       ],
     },
     {
@@ -34,7 +35,7 @@ export const DATA = {
         { name: "React Flow", icon: "reactflow" },
         { name: "Vite", icon: "vite" },
         { name: "Storybook", icon: "storybook" },
-        { name: "Design Systems", icon: "component" }
+        { name: "Design Systems", icon: "palette" }
       ],
     },
     {
@@ -64,8 +65,7 @@ export const DATA = {
         { name: "Linear", icon: "linear" },
         { name: "Notion", icon: "notion" },
         { name: "Slack Workflows", icon: "slack" },
-        { name: "Asana", icon: "asana" },
-        { name: "Trello", icon: "trello" }
+        { name: "Asana", icon: "asana" }
       ],
     },
   ],
