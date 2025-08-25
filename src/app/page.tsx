@@ -356,6 +356,20 @@ export default function Page() {
             </div>
           </div>
         </BlurFade>
+        <div className="flex flex-col gap-6 w-full mx-auto justify-center items-center mt-24">
+          <BlurFade delay={BLUR_FADE_DELAY * 17}>
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">Magic 12</p>
+              <div className="rounded-lg border overflow-hidden" style={{ width: '1170px', height: '700px' }}>
+                <img 
+                  src="/Isshowcase/magic12.png" 
+                  alt="Magic 12" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </BlurFade>
+        </div>
         <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-8">
           <BlurFade delay={BLUR_FADE_DELAY * 17.5}>
             <div className="space-y-3">
