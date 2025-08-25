@@ -2,6 +2,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
+import { TestimonialCard } from "@/components/testimonial-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Dropdown } from "@/components/ui/dropdown";
@@ -624,9 +625,43 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section id="testimonials">
+        <div className="space-y-12 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 13.5}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                  What people say
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Hear from the founders and leaders I&apos;ve worked with
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 max-w-6xl mx-auto">
+            {DATA.testimonials.map((testimonial, id) => (
+              <BlurFade
+                key={testimonial.name}
+                delay={BLUR_FADE_DELAY * 14 + id * 0.1}
+              >
+                <TestimonialCard
+                  name={testimonial.name}
+                  role={testimonial.role}
+                  company={testimonial.company}
+                  avatar={testimonial.avatar}
+                  content={testimonial.content}
+                  relationship={testimonial.relationship}
+                  date={testimonial.date}
+                />
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
       <section id="contact">
         <div className="flex flex-col items-center justify-center gap-8 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16.5}>
+          <BlurFade delay={BLUR_FADE_DELAY * 15}>
             <div className="flex flex-col items-center space-y-6">
               <Avatar className="size-32 border-2">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />

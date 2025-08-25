@@ -1,0 +1,6 @@
+# Testimonial Images
+This directory contains testimonial profile photos:
+- mohamed-taysir.jpg - Profile photo for Mohamed Taysir (CEO at Singularity Finance)
+- chris-c.jpg - Profile photo for Chris C (Head of Product at Asset Reality)
+
+Note: The actual photos should be extracted from the LinkedIn screenshots and placed here.

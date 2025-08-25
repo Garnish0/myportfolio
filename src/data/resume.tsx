@@ -291,6 +291,26 @@ export const DATA = {
     },
 
   ],
+  testimonials: [
+    {
+      name: "Chris C",
+      role: "Head of Product @ Asset Reality | x-Zendesk | Zipcar | Techstars",
+      company: "Asset Reality",
+      avatar: "/img/projects/me.png",
+      content: "I worked with Mehdi at Asset Reality during the early days of building out the platform and testing market demand. It was a pretty fast-paced and uncertain phase, and Mehdi was a solid presence on the team—thoughtful, dependable, and easy to work with.\n\nHe brought a good balance of product thinking and technical awareness, and was able to help us move things forward without getting caught up in the noise. I always appreciated his steady approach and his ability to cut through complexity when needed.\n\nWe worked well together, and I'd be happy to recommend him. He's smart, collaborative, and a safe pair of hands in early-stage environments.",
+      relationship: "",
+      date: ""
+    },
+    {
+      name: "Mohamed Taysir",
+      role: "CEO @Singularity Finance | Blockchain Solutions Architect",
+      company: "Singularity Finance",
+      avatar: "/img/projects/me.png",
+      content: "It was a pleasure having Mehdi onboard the team, he performed his role with clarity, vision, and technical excellence.\n\nHe's design skills are outstanding; he is able to translate the instructions given to him as well as create and improvise when asked to generate something based on the overall theme of the project.\nHis clarity helped the progression of our roadmap and created a streamlined way for the team's communication.\n\nI'm happy to work with him again for sure, he is professional and \"Reliable\" and would gladly recommend him to anyone in the tech industry.",
+      relationship: "",
+      date: ""
+    }
+  ],
   hackathons: [
     {
       title: "MagicBird Launch",
