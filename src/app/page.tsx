@@ -408,6 +408,7 @@ export default function Page() {
         <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-24">
           <BlurFade delay={BLUR_FADE_DELAY * 18.7}>
             <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">trilo logo</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <img 
                   src="/Isshowcase/trilo1.png" 
@@ -419,6 +420,7 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 19}>
             <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">develop ios app</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
                 <img 
                   src="/Isshowcase/trilo2.png" 
@@ -431,7 +433,8 @@ export default function Page() {
         </div>
         <BlurFade delay={BLUR_FADE_DELAY * 20}>
           <div className="flex justify-center mt-8">
-            <div>
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground text-center">website design and developement</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '1170px', height: '700px' }}>
                 <video 
                   src="/Isshowcase/trilo3.mp4" 
@@ -447,7 +450,8 @@ export default function Page() {
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 20.5}>
           <div className="flex justify-center mt-8">
-            <div>
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground text-center">IOS app design and AI integration</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '1170px', height: '700px' }}>
                 <video 
                   src="/Isshowcase/trilo02.mp4" 
