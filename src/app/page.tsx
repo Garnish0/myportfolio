@@ -194,7 +194,7 @@ export default function Page() {
             <div style={{ height: '120px', position: 'relative', overflow: 'hidden'}}>
               <LogoLoop
                 logos={techLogos}
-                speed={120}
+                speed={40}
                 direction="left"
                 logoHeight={48}
                 gap={40}
