@@ -129,7 +129,7 @@ export const DATA = {
       href: "https://hexmount.io",
       location: "Paris 10e, FR",
       title: "Co-Founder & COO",
-      logoUrl: "/hexmount_lite.svg",
+      logoUrl: "/hexmount.png",
       start: "Jan 2019",
       end: "Present",
       description:
@@ -212,7 +212,7 @@ export const DATA = {
       issuer: "Harvard Online",
       date: "May 2025",
       credentialId: "857cbe981f6e4a44a804f73f751cb46b",
-      logoUrl: "/Harvard University_lite.svg",
+      logoUrl: "/Harvard University.png",
       href: "https://www.harvardonline.harvard.edu/course/data-science-machine-learning",
     },
   ],
