@@ -11,15 +11,23 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import { Mail, MessageCircle } from "lucide-react";
 import LogoLoop from "@/components/LogoLoop";
-import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
+import BlurText from "@/components/BlurText";
 
 const BLUR_FADE_DELAY = 0.04;
 
 const techLogos = [
-  { node: <SiReact />, title: "React", href: "https://react.dev" },
-  { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
-  { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
-  { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+  { node: getSkillIcon("react"), title: "React" },
+  { node: getSkillIcon("typescript"), title: "TypeScript" },
+  { node: getSkillIcon("tailwindcss"), title: "Tailwind CSS" },
+  { node: getSkillIcon("nodejs"), title: "Node.js" },
+  { node: getSkillIcon("postgresql"), title: "PostgreSQL" },
+  { node: getSkillIcon("docker"), title: "Docker" },
+  { node: getSkillIcon("figma"), title: "Figma" },
+  { node: getSkillIcon("aws"), title: "AWS" },
+  { node: getSkillIcon("openai"), title: "OpenAI" },
+  { node: getSkillIcon("anthropic"), title: "Claude" },
+  { node: getSkillIcon("supabase"), title: "Supabase" },
+  { node: getSkillIcon("notion"), title: "Notion" },
 ];
 
 export default function Page() {
@@ -181,6 +189,17 @@ export default function Page() {
               />
             </div>
           </BlurFade>
+        </div>
+      </section>
+      <section id="latest-work" className="py-16">
+        <div className="flex justify-center">
+          <BlurText
+            text="Crafted experiences that captivate, convert, and create lasting impact"
+            delay={150}
+            animateBy="words"
+            direction="top"
+            className="text-4xl font-bold tracking-tight text-center"
+          />
         </div>
       </section>
       <section id="image-placeholders">
