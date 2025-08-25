@@ -5,6 +5,7 @@ import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Dropdown } from "@/components/ui/dropdown";
+import { RainbowButton } from "@/components/magicui/rainbow-button";
 import { DATA } from "@/data/resume";
 import { getSkillIcon, Icons } from "@/components/icons";
 import Link from "next/link";
@@ -113,6 +114,7 @@ export default function Page() {
                 title={education.school}
                 subtitle={education.degree}
                 period={`${education.start} - ${education.end}`}
+                disableLink={true}
               />
             </BlurFade>
           ))}
@@ -174,7 +176,7 @@ export default function Page() {
       <section id="tech-logos" className="w-full">
         <div className="w-screen relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw]">
           <BlurFade delay={BLUR_FADE_DELAY * 10.2}>
-            <div style={{ height: '200px', position: 'relative', overflow: 'hidden'}}>
+            <div style={{ height: '120px', position: 'relative', overflow: 'hidden'}}>
               <LogoLoop
                 logos={techLogos}
                 speed={120}
@@ -609,37 +611,12 @@ export default function Page() {
               </div>
               
               <div className="flex items-center gap-4">
-                <Button
-                  variant="ghost"
-                  className="flex items-center gap-2"
-                  asChild
-                >
+                <RainbowButton asChild>
                   <Link href={`mailto:${DATA.contact.email}`}>
-                    <Mail className="h-4 w-4" />
+                    <Mail className="h-4 w-4 mr-2" />
                     Send email
                   </Link>
-                </Button>
-                
-                <Dropdown
-                  trigger={
-                    <>
-                      <MessageCircle className="h-4 w-4" />
-                      Send dm...
-                    </>
-                  }
-                  items={[
-                    {
-                      label: "Open LinkedIn",
-                      href: DATA.contact.social.LinkedIn.url,
-                      icon: <Icons.linkedin className="h-4 w-4" />
-                    },
-                    {
-                      label: "Open X (Twitter)",
-                      href: DATA.contact.social.X.url,
-                      icon: <Icons.twitter className="h-4 w-4" />
-                    }
-                  ]}
-                />
+                </RainbowButton>
               </div>
             </div>
           </BlurFade>
