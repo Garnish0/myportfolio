@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import PillNav from "@/components/PillNav";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
@@ -68,6 +69,23 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
+            <PillNav
+              logo="/favicon.png"
+              logoAlt="Portfolio Logo"
+              items={[
+                { label: 'Home', href: '/' },
+                { label: 'About', href: '/about' },
+                { label: 'Services', href: '/services' },
+                { label: 'Contact', href: '/contact' }
+              ]}
+              activeHref="/"
+              className="custom-nav"
+              ease="power2.easeOut"
+              baseColor="#000000"
+              pillColor="#ffffff"
+              hoveredPillTextColor="#ffffff"
+              pillTextColor="#000000"
+            />
             {children}
             <Navbar />
           </TooltipProvider>
