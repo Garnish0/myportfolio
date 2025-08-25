@@ -191,7 +191,7 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-      <section id="latest-work" className="py-16">
+      <section id="latest-work" className="py-8">
         <div className="flex justify-center items-center">
           <BlurText
             text="Crafted experiences that captivate, convert, and create lasting impact"
