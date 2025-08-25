@@ -405,6 +405,30 @@ export default function Page() {
             </div>
           </BlurFade>
         </div>
+        <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-8">
+          <BlurFade delay={BLUR_FADE_DELAY * 18.7}>
+            <div className="space-y-3">
+              <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
+                <img 
+                  src="/Isshowcase/trilo1.png" 
+                  alt="Trilo 1" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 19}>
+            <div className="space-y-3">
+              <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
+                <img 
+                  src="/Isshowcase/trilo2.png" 
+                  alt="Trilo 2" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </BlurFade>
+        </div>
         <BlurFade delay={BLUR_FADE_DELAY * 20}>
           <div className="flex justify-center mt-8">
             <div>
