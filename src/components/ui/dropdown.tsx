@@ -44,7 +44,7 @@ export const Dropdown = ({ items, trigger, className }: DropdownProps) => {
       </Button>
       
       {isOpen && (
-        <div className="absolute top-full mt-1 left-0 z-50 min-w-full rounded-lg border bg-popover p-1 shadow-md">
+        <div className="absolute top-full mt-1 left-0 z-[60] min-w-[160px] rounded-lg border bg-popover p-1 shadow-md whitespace-nowrap">
           {items.map((item, index) => (
             <a
               key={index}
