@@ -81,7 +81,7 @@ export const DATA = {
         name: "GitHub",
         url: "https://github.com/mehdimassrali",
         icon: Icons.github,
-        navbar: true,
+        navbar: false,
       },
       LinkedIn: {
         name: "LinkedIn",
