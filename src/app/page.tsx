@@ -17,7 +17,7 @@ import { Mail, MessageCircle } from "lucide-react";
 
 const LogoLoop = dynamic(() => import("@/components/LogoLoop"), {
   ssr: false,
-  loading: () => <div className="h-[120px] animate-pulse bg-muted/50 rounded" />
+  loading: () => <div className="h-[140px] animate-pulse bg-muted/50 rounded" />
 });
 
 const BlurText = dynamic(() => import("@/components/BlurText"), {
@@ -192,12 +192,12 @@ export default function Page() {
       <section id="tech-logos" className="w-full">
         <div className="w-screen relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw]">
           <BlurFade delay={BLUR_FADE_DELAY * 10.2}>
-            <div style={{ height: '120px', position: 'relative', overflow: 'hidden'}}>
+            <div style={{ height: '140px', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center'}}>
               <LogoLoop
                 logos={techLogos}
                 speed={40}
                 direction="left"
-                logoHeight={48}
+                logoHeight={64}
                 gap={40}
                 pauseOnHover
                 scaleOnHover
