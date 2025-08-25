@@ -10,8 +10,17 @@ import { getSkillIcon, Icons } from "@/components/icons";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import { Mail, MessageCircle } from "lucide-react";
+import LogoLoop from "@/components/LogoLoop";
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss } from 'react-icons/si';
 
 const BLUR_FADE_DELAY = 0.04;
+
+const techLogos = [
+  { node: <SiReact />, title: "React", href: "https://react.dev" },
+  { node: <SiNextdotjs />, title: "Next.js", href: "https://nextjs.org" },
+  { node: <SiTypescript />, title: "TypeScript", href: "https://www.typescriptlang.org" },
+  { node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+];
 
 export default function Page() {
   return (
@@ -152,6 +161,26 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+        </div>
+      </section>
+      <section id="tech-logos">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 10.2}>
+            <div style={{ height: '200px', position: 'relative', overflow: 'hidden'}}>
+              <LogoLoop
+                logos={techLogos}
+                speed={120}
+                direction="left"
+                logoHeight={48}
+                gap={40}
+                pauseOnHover
+                scaleOnHover
+                fadeOut
+                fadeOutColor="#ffffff"
+                ariaLabel="Technology partners"
+              />
+            </div>
+          </BlurFade>
         </div>
       </section>
       <section id="image-placeholders">
