@@ -91,7 +91,7 @@ export const DATA = {
       },
       X: {
         name: "X",
-        url: "https://twitter.com/mehdimassrali",
+        url: "https://x.com/triloHQ",
         icon: Icons.x,
         navbar: true,
       },
@@ -99,7 +99,7 @@ export const DATA = {
         name: "Youtube",
         url: "https://youtube.com/@mehdimassrali",
         icon: Icons.youtube,
-        navbar: true,
+        navbar: false,
       },
       email: {
         name: "Send Email",

@@ -1,6 +1,7 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import { getBlogPosts } from "@/data/blog";
 import Link from "next/link";
+import ASCIIText from "@/components/ASCIIText";
 
 export const metadata = {
   title: "Blog",
