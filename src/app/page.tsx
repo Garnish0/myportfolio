@@ -5,7 +5,7 @@ import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Dropdown } from "@/components/ui/dropdown";
-import { RainbowButton } from "@/components/magicui/rainbow-button";
+import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import { getSkillIcon, Icons } from "@/components/icons";
 import Link from "next/link";
@@ -583,6 +583,7 @@ export default function Page() {
                   title={project.title}
                   description={project.description}
                   dates={project.dates}
+                  tags={project.technologies || []}
                   image={project.image}
                   video={project.video}
                   links={project.links}
@@ -603,20 +604,20 @@ export default function Page() {
               
               <div className="space-y-4 text-center">
                 <h2 className="text-2xl font-bold text-foreground">
-                  Hey, it's me, the maker of everything you just saw.
+                  Hey, it&apos;s me, the maker of everything you just saw.
                 </h2>
                 <p className="mx-auto max-w-[600px] text-lg text-muted-foreground">
-                  If something caught your attention and you have a potential project in mind – I'm a message away.
+                  If something caught your attention and you have a potential project in mind – I&apos;m a message away.
                 </p>
               </div>
               
               <div className="flex items-center gap-4">
-                <RainbowButton asChild>
-                  <Link href={`mailto:${DATA.contact.email}`}>
-                    <Mail className="h-4 w-4 mr-2" />
+                <Link href={`mailto:${DATA.contact.email}`}>
+                  <Badge className="flex gap-2 px-3 py-2 text-xs hover:bg-primary/90 transition-colors cursor-pointer">
+                    <Mail className="h-4 w-4" />
                     Send email
-                  </Link>
-                </RainbowButton>
+                  </Badge>
+                </Link>
               </div>
             </div>
           </BlurFade>
