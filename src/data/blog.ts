@@ -16,7 +16,12 @@ type Metadata = {
 };
 
 function getMDXFiles(dir: string) {
-  return fs.readdirSync(dir).filter((file) => path.extname(file) === ".mdx");
+  try {
+    return fs.readdirSync(dir).filter((file) => path.extname(file) === ".mdx");
+  } catch (error) {
+    // If directory doesn't exist, return empty array
+    return [];
+  }
 }
 
 export async function markdownToHTML(markdown: string) {
@@ -66,5 +71,11 @@ async function getAllPosts(dir: string) {
 }
 
 export async function getBlogPosts() {
-  return getAllPosts(path.join(process.cwd(), "content"));
+  const contentDir = path.join(process.cwd(), "content");
+  try {
+    return getAllPosts(contentDir);
+  } catch (error) {
+    // If content directory doesn't exist, return empty array
+    return [];
+  }
 }
