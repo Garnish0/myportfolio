@@ -405,7 +405,7 @@ export default function Page() {
             </div>
           </BlurFade>
         </div>
-        <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-8">
+        <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-24">
           <BlurFade delay={BLUR_FADE_DELAY * 18.7}>
             <div className="space-y-3">
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
