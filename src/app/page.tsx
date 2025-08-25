@@ -192,13 +192,13 @@ export default function Page() {
         </div>
       </section>
       <section id="latest-work" className="py-16">
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center">
           <BlurText
             text="Crafted experiences that captivate, convert, and create lasting impact"
             delay={150}
             animateBy="words"
             direction="top"
-            className="text-4xl font-bold tracking-tight text-center"
+            className="text-4xl font-bold tracking-tight text-center justify-center"
           />
         </div>
       </section>
