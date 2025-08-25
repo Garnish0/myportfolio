@@ -16,7 +16,7 @@ export default async function BlogPage() {
   return (
     <section>
       <BlurFade delay={BLUR_FADE_DELAY}>
-        <h1 className="font-medium text-2xl mb-8 tracking-tighter">blog</h1>
+        <h1 className="font-light text-lg mb-8 tracking-tighter text-muted-foreground text-center">Coming Soon</h1>
       </BlurFade>
       {posts
         .sort((a, b) => {
@@ -42,6 +42,17 @@ export default async function BlogPage() {
             </Link>
           </BlurFade>
         ))}
+      <BlurFade delay={BLUR_FADE_DELAY * 3 + posts.length * 0.05}>
+        <div className="w-full h-64 relative mt-16 flex items-center justify-center">
+          <ASCIIText
+            text="Coming Soon"
+            enableWaves={true}
+            asciiFontSize={16}
+            textFontSize={200}
+            planeBaseHeight={12}
+          />
+        </div>
+      </BlurFade>
     </section>
   );
 }
