@@ -213,6 +213,7 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 12.5}>
             <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">Additional assets</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <img 
                   src="/Isshowcase/hex4.png" 
@@ -268,7 +269,8 @@ export default function Page() {
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 14.5}>
           <div className="flex justify-center mt-8">
-            <div>
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground text-center">Pitch Deck material</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '1170px', height: '700px' }}>
                 <img 
                   src="/Isshowcase/sat4.png" 
@@ -297,6 +299,7 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 15.5}>
             <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">Interactive 3D asset</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <video 
                   src="/Isshowcase/sat5.mp4" 
@@ -384,6 +387,7 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 18}>
             <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">Marketing materials</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <img 
                   src="/Isshowcase/magic9.png" 
@@ -395,6 +399,7 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 18.5}>
             <div className="space-y-3">
+              <p className="text-sm text-muted-foreground">Visual identity</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <img 
                   src="/Isshowcase/magic11.png" 
