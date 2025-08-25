@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -341,9 +342,11 @@ export const SkillIcon = ({ iconName, className }: { iconName: string; className
   }
 
   return (
-    <img
+    <Image
       src={iconPath}
       alt={iconName}
+      width={24}
+      height={24}
       className={cn(
         "size-6",
         // Make all icons black/dark like other skill icons
