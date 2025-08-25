@@ -60,6 +60,7 @@ export function ProjectCard({
               loop
               muted
               playsInline
+              preload="metadata"
               className="pointer-events-none w-full h-full object-cover object-center"
             />
           </div>
