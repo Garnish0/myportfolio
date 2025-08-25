@@ -43,7 +43,7 @@ export const ResumeCard = ({
   const cardContent = (
     <Card className="flex">
       <div className="flex-none">
-        <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
+        <Avatar className="border size-12 mt-1 bg-muted-background dark:bg-foreground">
           <AvatarImage
             src={logoUrl}
             alt={altText}
@@ -54,8 +54,8 @@ export const ResumeCard = ({
       </div>
       <div className={cn("flex-grow ml-4 items-center flex-col", !disableLink && "group")}>
         <CardHeader>
-          <div className="flex items-center justify-between gap-x-2 text-base">
-            <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-x-2 text-base">
+            <h3 className="inline-flex items-center font-semibold leading-none text-xs sm:text-sm">
               {title}
               {badges && (
                 <span className="inline-flex gap-x-1">
@@ -79,11 +79,11 @@ export const ResumeCard = ({
                 />
               )}
             </h3>
-            <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
+            <div className="text-xs sm:text-sm tabular-nums text-muted-foreground sm:text-right order-first sm:order-last">
               {period}
             </div>
           </div>
-          {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
+          {subtitle && <div className="font-sans text-xs mt-1">{subtitle}</div>}
         </CardHeader>
         {description && (
           <motion.div
