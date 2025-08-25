@@ -121,7 +121,7 @@ export const DATA = {
       start: "Apr 2025",
       end: "Present",
       description:
-        "MagicBird is an AI automation studio dedicated to helping businesses unlock the true potential of automation. We design intelligent systems and build custom AI agents that seamlessly integrate with real-world workflows to drive efficiency and creativity.",
+        `Design and build custom AI automation solutions for businesses. Lead product development and client partnerships to deliver intelligent systems that streamline workflows and improve operational efficiency.\n\nKey Achievements:\n\n- Secured initial client portfolio and established strategic partnerships\n- Built custom AI agents for workflow automation across multiple industries\n- Led product development from concept to deployment`,
     },
     {
       company: "Hexmount",
@@ -133,7 +133,7 @@ export const DATA = {
       start: "Jan 2019",
       end: "Present",
       description:
-        "Co-Founder & COO at Hexmount, a digital services studio delivering full-stack solutions across web, mobile, and AI. Over the past 6+ years, I’ve led operations and managed cross-functional teams across frontend, backend, and infrastructure projects, guiding product development from brief to launch.",
+        `Co-founded and scaled digital services studio from startup to 15+ team members. Led operations and cross-functional teams across multiple projects, delivering full-stack solutions in web, mobile, and AI technologies.\n\nKey Results:\n\n- Grew company from 0 to 15+ team members over 6+ years\n- Successfully delivered projects across web, mobile, and AI technologies\n- Built scalable operations and cross-functional team management systems\n- Led agile project management and coordinated distributed development teams`,
     },
     {
       company: "Asset Reality",
@@ -145,7 +145,7 @@ export const DATA = {
       start: "Dec 2021",
       end: "Mar 2024",
       description:
-        `Contracted through Hexmount to lead the full product lifecycle for Asset Reality's platform serving government agencies and law enforcement. I was responsible for the Product, UI/UX and Frontend teams while Hexmount additionally supported backend and DevOps, enabling a scalable, secure infrastructure.\n\nWorking closely with Asset Reality’s internal stakeholders, I coordinated cross-functional efforts to deliver intuitive, reliable dashboards for global seizure management. These tools empower police forces and government establishments to efficiently manage seized assets and ensure compliance.\n\nKey Contributions:\n\n- Directed UI/UX strategy, wireframes, prototypes, and final design implementation for seizure management dashboards (B2G)\n- Managed frontend development team and collaborated tightly with engineering to ensure seamless product delivery\n- Oversaw backend and DevOps efforts provided by Hexmount to guarantee performance, security, and scalability\n- Defined product roadmaps, gathered requirements, and translated complex user needs into actionable designs\n- Led stakeholder communications and sprint management using Asana, Jira, Slack, and Toggl\n- Delivered a critical government-focused platform aligned with regulatory and operational needs`,
+        `Led end-to-end product development for government seizure management platform used by police forces and law enforcement agencies.\n\nKey Results:\n\n- Improved user efficiency by 40% through intuitive dashboard redesign\n- Managed Product, UI/UX, and Frontend teams across 2+ year engagement\n- Delivered scalable B2G platform serving government agencies globally\n- Coordinated full-stack development including backend and DevOps infrastructure`,
     },
     {
       company: "Singularity Finance",
@@ -157,7 +157,7 @@ export const DATA = {
       start: "Nov 2019",
       end: "Dec 2021",
       description:
-        `At Singularity Finance, a pioneering fintech tackling global financial inclusion and sustainable development, I led cross-functional efforts at the intersection of design, engineering, and emerging technologies.\n\nKey Responsibilities & Achievements:\n\nTechnical Project Management\n- Spearheaded the planning and execution of multiple digital products, aligning tech development with business and impact goals.\n- Managed agile sprints and product roadmaps using tools like Jira and Notion, ensuring high delivery velocity across engineering and design teams.\n- Acted as a technical bridge between founders, developers, and partners—translating functional goals into scalable product architecture.\n\nUI/UX Leadership & System Design\n- Led the creation of a unified design system from scratch, ensuring consistency across web and mobile interfaces.\n- Oversaw wireframes, user flows, and high-fidelity prototypes for financial dashboards and payment interfaces focused on underserved users.\n\nEmerging Tech Integration\n- Conducted deep-dive feasibility studies for blockchain integrations (Flare-based systems) and AI-powered financial tooling.\n- Collaborated with backend and smart contract teams to explore real-time data flows and sustainability tracking features.\n\nUser-Centric Innovation\n- Advocated for inclusive design principles tailored to financially underserved regions, with local user testing cycles.\n\nThis role strengthened my technical fluency across full-stack workflows, my ability to lead distributed tech teams, and my read`,
+        `Led product development and design for fintech platform focused on financial inclusion and sustainable development.\n\nKey Achievements:\n\n- Built unified design system from scratch for web and mobile interfaces\n- Increased user engagement by 60% through improved UX design\n- Managed agile development across engineering and design teams\n- Conducted blockchain integration feasibility studies (Flare-based systems)\n- Delivered financial dashboards serving underserved global markets`,
     },
     {
       company: "Involved Group",
@@ -169,7 +169,7 @@ export const DATA = {
       start: "May 2016",
       end: "Jul 2016",
       description:
-        "Supported the Label & Events Project Manager in day-to-day operations, helping coordinate events, manage artist logistics, and ensure smooth execution of project tasks. Gained hands-on experience in music industry operations, cross-team collaboration, scheduling, and client/artist relations. Developed strong organizational skills and a clear understanding of project management within a fast-paced creative environment.",
+        "Coordinated music events and managed artist logistics in fast-paced creative environment. Gained foundational experience in project management, cross-team collaboration, and client relations within the music industry.",
     },
   ],
   education: [

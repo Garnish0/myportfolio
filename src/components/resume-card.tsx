@@ -46,11 +46,11 @@ export const ResumeCard = ({
         return (
           <div key={index} className="mb-4">
             {title && !title.startsWith('- ') && (
-              <h4 className="font-semibold mb-2 text-foreground">{title}</h4>
+              <h4 className="font-semibold mb-2 text-sm text-foreground">{title}</h4>
             )}
             <ul className="space-y-1 ml-4">
               {bullets.map((bullet, bulletIndex) => (
-                <li key={bulletIndex} className="text-muted-foreground text-xs sm:text-sm flex">
+                <li key={bulletIndex} className="text-foreground/80 text-xs sm:text-sm flex">
                   <span className="mr-2 text-primary">•</span>
                   <span>{bullet.replace('- ', '')}</span>
                 </li>
@@ -63,7 +63,7 @@ export const ResumeCard = ({
       // Handle section headers (lines that don't start with lowercase and aren't bullet points)
       if (paragraph.length < 100 && !paragraph.includes('.') && paragraph === paragraph.trim()) {
         return (
-          <h4 key={index} className="font-semibold mb-2 mt-4 first:mt-0 text-foreground">
+          <h4 key={index} className="font-semibold mb-2 mt-4 first:mt-0 text-sm text-foreground">
             {paragraph}
           </h4>
         );
@@ -71,7 +71,7 @@ export const ResumeCard = ({
       
       // Regular paragraphs
       return (
-        <p key={index} className="mb-3 text-muted-foreground text-xs sm:text-sm leading-relaxed">
+        <p key={index} className="mb-3 text-foreground/80 text-xs sm:text-sm leading-relaxed">
           {paragraph}
         </p>
       );
