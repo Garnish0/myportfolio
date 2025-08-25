@@ -163,8 +163,8 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="tech-logos">
-        <div className="flex min-h-0 flex-col gap-y-3">
+      <section id="tech-logos" className="w-full">
+        <div className="w-screen relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw]">
           <BlurFade delay={BLUR_FADE_DELAY * 10.2}>
             <div style={{ height: '200px', position: 'relative', overflow: 'hidden'}}>
               <LogoLoop
