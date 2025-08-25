@@ -213,7 +213,6 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 12.5}>
             <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">placeholder 2</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <img 
                   src="/Isshowcase/hex4.png" 
@@ -252,7 +251,8 @@ export default function Page() {
         </div>
         <BlurFade delay={BLUR_FADE_DELAY * 14}>
           <div className="flex justify-center mt-8">
-            <div>
+            <div className="space-y-3">
+              <p className="text-sm text-muted-foreground text-center">Website Dashboard and SDK developement and implentation</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '1170px', height: '700px' }}>
                 <video 
                   src="/Isshowcase/sat3.mp4" 
@@ -282,7 +282,7 @@ export default function Page() {
         <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-8">
           <BlurFade delay={BLUR_FADE_DELAY * 15}>
             <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">placeholder 6</p>
+              <p className="text-sm text-muted-foreground">Custom 3D assets and integration</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
                 <video 
                   src="/Isshowcase/sat2.mp4" 
@@ -297,7 +297,6 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 15.5}>
             <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">placeholder 5</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <video 
                   src="/Isshowcase/sat5.mp4" 
@@ -314,7 +313,7 @@ export default function Page() {
         <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-24">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">placeholder 7</p>
+              <p className="text-sm text-muted-foreground">magicbird logo</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <img 
                   src="/Isshowcase/magic1.png" 
@@ -326,7 +325,7 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 16.5}>
             <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">placeholder 8</p>
+              <p className="text-sm text-muted-foreground">website design and implementation</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '790px', height: '400px' }}>
                 <video 
                   src="/Isshowcase/magic2.mp4" 
@@ -359,7 +358,7 @@ export default function Page() {
         <div className="flex flex-col gap-6 w-full mx-auto justify-center items-center mt-8">
           <BlurFade delay={BLUR_FADE_DELAY * 17}>
             <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">Magic 12</p>
+              <p className="text-sm text-muted-foreground">AI workflow automation</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '1170px', height: '700px' }}>
                 <img 
                   src="/Isshowcase/magic12.png" 
@@ -373,7 +372,7 @@ export default function Page() {
         <div className="flex flex-col sm:flex-row gap-6 w-full mx-auto justify-center items-center mt-8">
           <BlurFade delay={BLUR_FADE_DELAY * 17.5}>
             <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">placeholder 10</p>
+              <p className="text-sm text-muted-foreground">Branding assets</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <img 
                   src="/Isshowcase/magic10.png" 
@@ -385,7 +384,6 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 18}>
             <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">placeholder 9</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <img 
                   src="/Isshowcase/magic9.png" 
@@ -397,7 +395,6 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 18.5}>
             <div className="space-y-3">
-              <p className="text-sm text-muted-foreground">placeholder 11</p>
               <div className="rounded-lg border overflow-hidden" style={{ width: '380px', height: '400px' }}>
                 <img 
                   src="/Isshowcase/magic11.png" 
