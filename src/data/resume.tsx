@@ -224,15 +224,7 @@ export const DATA = {
       active: true,
       description:
         "AI automation platform that builds custom AI agents for businesses, streamlining workflows and improving operational efficiency across various industries.",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "Python",
-        "OpenAI",
-        "TailwindCSS",
-        "PostgreSQL",
-        "Docker",
-      ],
+      technologies: [],
       links: [
         {
           type: "Visit Website",
@@ -250,15 +242,7 @@ export const DATA = {
       active: true,
       description:
         "Comprehensive client management platform for digital services, featuring project tracking, communication tools, and automated billing systems.",
-      technologies: [
-        "React",
-        "Node.js",
-        "TypeScript",
-        "PostgreSQL",
-        "AWS",
-        "Stripe",
-        "TailwindCSS",
-      ],
+      technologies: [],
       links: [
         {
           type: "Visit Website",
@@ -276,15 +260,7 @@ export const DATA = {
       active: false,
       description:
         "Your AI coworkers that never sleep. Handles meetings, tasks, and docs while you focus on what matters. No more tool sprawl.",
-      technologies: [
-        "Vue.js",
-        "Python",
-        "Django",
-        "PostgreSQL",
-        "AWS",
-        "D3.js",
-        "Material UI",
-      ],
+      technologies: [],
       links: [
         {
           type: "Visit Website",
@@ -302,15 +278,7 @@ export const DATA = {
       active: false,
       description:
         "SDK and API solution for bitcoin integration. Simplify integration and build faster with SatStream's powerful SDKs and intuitive tools.",
-      technologies: [
-        "Node.js",
-        "TypeScript",
-        "Bitcoin",
-        "WebSocket",
-        "REST API",
-        "SDK",
-        "Docker",
-      ],
+      technologies: [],
       links: [
         {
           type: "Visit Website",
