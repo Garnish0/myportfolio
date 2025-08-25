@@ -33,6 +33,51 @@ export const ResumeCard = ({
 }: ResumeCardProps) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
+  const formatDescription = (text: string) => {
+    const paragraphs = text.split('\n\n');
+    
+    return paragraphs.map((paragraph, index) => {
+      // Handle bullet points
+      if (paragraph.includes('- ')) {
+        const lines = paragraph.split('\n');
+        const title = lines[0];
+        const bullets = lines.slice(1).filter(line => line.trim().startsWith('- '));
+        
+        return (
+          <div key={index} className="mb-4">
+            {title && !title.startsWith('- ') && (
+              <h4 className="font-semibold mb-2 text-foreground">{title}</h4>
+            )}
+            <ul className="space-y-1 ml-4">
+              {bullets.map((bullet, bulletIndex) => (
+                <li key={bulletIndex} className="text-muted-foreground text-xs sm:text-sm flex">
+                  <span className="mr-2 text-primary">•</span>
+                  <span>{bullet.replace('- ', '')}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      }
+      
+      // Handle section headers (lines that don't start with lowercase and aren't bullet points)
+      if (paragraph.length < 100 && !paragraph.includes('.') && paragraph === paragraph.trim()) {
+        return (
+          <h4 key={index} className="font-semibold mb-2 mt-4 first:mt-0 text-foreground">
+            {paragraph}
+          </h4>
+        );
+      }
+      
+      // Regular paragraphs
+      return (
+        <p key={index} className="mb-3 text-muted-foreground text-xs sm:text-sm leading-relaxed">
+          {paragraph}
+        </p>
+      );
+    });
+  };
+
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (description) {
       e.preventDefault();
@@ -96,9 +141,11 @@ export const ResumeCard = ({
               duration: 0.7,
               ease: [0.16, 1, 0.3, 1],
             }}
-            className="mt-2 text-xs sm:text-sm"
+            className="mt-4 px-4 border-l-2 border-primary/20"
           >
-            {description}
+            <div className="space-y-2">
+              {formatDescription(description)}
+            </div>
           </motion.div>
         )}
       </div>
