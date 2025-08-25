@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   },
   description: DATA.description,
   icons: {
-    icon: '/Isshowcase/fav.png',
-    shortcut: '/Isshowcase/fav.png',
-    apple: '/Isshowcase/fav.png',
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
   },
   openGraph: {
     title: `${DATA.name}`,
