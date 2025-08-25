@@ -345,10 +345,10 @@ export const SkillIcon = ({ iconName, className }: { iconName: string; className
     <Image
       src={iconPath}
       alt={iconName}
-      width={24}
-      height={24}
+      width={20}
+      height={20}
       className={cn(
-        "size-6",
+        "size-5",
         // Make all icons black/dark like other skill icons
         "brightness-0",
         className
@@ -362,7 +362,7 @@ export const getSkillIcon = (iconName: string): React.ReactNode => {
   // Check if it's one of the SVG icons from the Icons object
   if (iconName in Icons) {
     const IconComponent = Icons[iconName as keyof typeof Icons];
-    return <IconComponent className="size-6 text-black" />;
+    return <IconComponent className="size-5 text-black" />;
   }
   
   return <SkillIcon iconName={iconName} />;
