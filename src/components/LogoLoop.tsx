@@ -57,8 +57,7 @@ const cx = (...parts: Array<string | false | null | undefined>) =>
 
 const useResizeObserver = (
   callback: () => void,
-  elements: Array<React.RefObject<Element | null>>,
-  dependencies: React.DependencyList
+  elements: Array<React.RefObject<Element | null>>
 ) => {
   useEffect(() => {
     if (!window.ResizeObserver) {
@@ -80,13 +79,12 @@ const useResizeObserver = (
     return () => {
       observers.forEach((observer) => observer?.disconnect());
     };
-  }, dependencies);
+  }, [callback, elements]);
 };
 
 const useImageLoader = (
   seqRef: React.RefObject<HTMLUListElement | null>,
-  onLoad: () => void,
-  dependencies: React.DependencyList
+  onLoad: () => void
 ) => {
   useEffect(() => {
     const images = seqRef.current?.querySelectorAll("img") ?? [];
@@ -120,7 +118,7 @@ const useImageLoader = (
         img.removeEventListener("error", handleImageLoad);
       });
     };
-  }, dependencies);
+  }, [seqRef, onLoad]);
 };
 
 const useAnimationLoop = (
@@ -193,7 +191,7 @@ const useAnimationLoop = (
       }
       lastTimestampRef.current = null;
     };
-  }, [targetVelocity, seqWidth, isHovered, pauseOnHover]);
+  }, [targetVelocity, seqWidth, isHovered, pauseOnHover, trackRef]);
 };
 
 export const LogoLoop = React.memo<LogoLoopProps>(
@@ -245,11 +243,10 @@ export const LogoLoop = React.memo<LogoLoopProps>(
 
     useResizeObserver(
       updateDimensions,
-      [containerRef, seqRef],
-      [logos, gap, logoHeight]
+      [containerRef, seqRef]
     );
 
-    useImageLoader(seqRef, updateDimensions, [logos, gap, logoHeight]);
+    useImageLoader(seqRef, updateDimensions);
 
     useAnimationLoop(
       trackRef,
