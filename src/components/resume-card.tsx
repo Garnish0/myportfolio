@@ -43,7 +43,7 @@ export const ResumeCard = ({
   const cardContent = (
     <Card className="flex">
       <div className="flex-none">
-        <Avatar className="border size-12 mt-1 bg-muted-background dark:bg-foreground">
+        <Avatar className="border size-12 bg-muted-background dark:bg-foreground">
           <AvatarImage
             src={logoUrl}
             alt={altText}

@@ -19,6 +19,7 @@ export default async function BlogPage() {
         <h1 className="font-light text-lg mb-8 tracking-tighter text-muted-foreground text-center">Coming Soon</h1>
       </BlurFade>
       {posts
+        .filter((post) => post.slug !== "coming-soon") // Hide the first blog post
         .sort((a, b) => {
           if (
             new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
