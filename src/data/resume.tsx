@@ -18,7 +18,6 @@ export const DATA = {
       skills: [
         { name: "N8n", icon: "n8n" },
                 { name: "Cursor", icon: "cursor" },
-        { name: "Zapier", icon: "zapier" },
         { name: "ChatGPT", icon: "chatgpt" },
         { name: "Claude 4", icon: "anthropic" },
                 { name: "Midjourney", icon: "midjourney" },
