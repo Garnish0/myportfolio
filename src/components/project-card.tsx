@@ -78,11 +78,10 @@ export function ProjectCard({
       <CardHeader className="px-4 py-4">
         <div className="space-y-2">
           <CardTitle className="text-xl font-semibold">{title}</CardTitle>
-          <time className="font-sans text-base text-muted-foreground">{dates}</time>
           <div className="hidden font-sans text-xs underline print:visible">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
           </div>
-          <Markdown className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert leading-relaxed">
+          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert leading-relaxed">
             {description}
           </Markdown>
         </div>

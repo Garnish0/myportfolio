@@ -41,7 +41,7 @@ export default function Page() {
               />
             </div>
             
-            <div className="space-y-6">
+            <div className="space-y-6 mt-4">
               <BlurFade delay={BLUR_FADE_DELAY * 2}>
                 <h2 className="text-xl font-semibold">Working with me</h2>
               </BlurFade>
@@ -91,7 +91,6 @@ export default function Page() {
             >
               <ResumeCard
                 key={education.school}
-                href={education.href}
                 logoUrl={education.logoUrl}
                 altText={education.school}
                 title={education.school}
@@ -534,7 +533,6 @@ export default function Page() {
                   title={project.title}
                   description={project.description}
                   dates={project.dates}
-                  tags={project.technologies}
                   image={project.image}
                   video={project.video}
                   links={project.links}
