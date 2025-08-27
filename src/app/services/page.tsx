@@ -9,7 +9,7 @@ const BLUR_FADE_DELAY = 0.04;
 export default function Services() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
-      <section id="latest-work" className="py-8">
+      <section id="latest-work" className="py-8 pt-16">
         <div className="flex justify-center items-center">
           <BlurText
             text="Crafted experiences that captivate, convert, and create lasting impact"

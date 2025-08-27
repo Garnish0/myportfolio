@@ -13,17 +13,19 @@ const BlurText = dynamic(() => import("@/components/BlurText"), {
 
 export default function Contact() {
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
+    <div className="min-h-screen flex items-center justify-center p-4 pt-16">
       <div className="w-full max-w-2xl mx-auto">
-        <div className="mb-8 text-center">
-          <BlurText
-            text="Have a project in mind? Let's talk"
-            delay={150}
-            animateBy="words"
-            direction="top"
-            className="text-4xl font-bold mb-4"
-          />
-          <p className="text-lg text-gray-600">
+        <div className="mb-8">
+          <div className="text-center mb-4">
+            <BlurText
+              text="Have a project in mind? Let's talk"
+              delay={150}
+              animateBy="words"
+              direction="top"
+              className="text-4xl font-bold"
+            />
+          </div>
+          <p className="text-lg text-gray-600 text-left">
             I'd like to understand more about your company and project goals. The more context you
             provide, the more effective our collaboration will be!
           </p>

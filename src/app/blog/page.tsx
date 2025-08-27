@@ -14,7 +14,7 @@ export default async function BlogPage() {
   const posts = await getBlogPosts();
 
   return (
-    <section>
+    <section className="pt-16">
       <BlurFade delay={BLUR_FADE_DELAY}>
         <h1 className="font-light text-lg mb-8 tracking-tighter text-muted-foreground text-center">Coming Soon</h1>
       </BlurFade>
