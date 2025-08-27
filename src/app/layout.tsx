@@ -75,7 +75,7 @@ export default function RootLayout({
               items={[
                 { label: 'Home', href: '/' },
                 { label: 'About', href: '/about' },
-                { label: 'Services', href: '/services' },
+                { label: 'Portfolio', href: '/services' },
                 { label: 'Contact', href: '/contact' }
               ]}
               activeHref="/"

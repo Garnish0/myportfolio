@@ -54,11 +54,12 @@ export default function Page() {
               </p>
             </BlurFade>
             
-            <BlurFadeText
-              delay={BLUR_FADE_DELAY * 1.5}
-              className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight"
-              yOffset={8}
+            <BlurText
               text="Driving Business Growth through Product Strategy, Scalable Design & Technology"
+              delay={150}
+              animateBy="words"
+              direction="top"
+              className="text-[36px] font-bold tracking-tight leading-tight text-center justify-center"
             />
             
             <BlurFadeText
@@ -273,36 +274,6 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
-        </div>
-      </section>
-      <section id="contact">
-        <div className="flex flex-col items-center justify-center gap-8 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 15}>
-            <div className="flex flex-col items-center space-y-6">
-              <Avatar className="size-32 border-2">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
-              
-              <div className="space-y-4 text-center">
-                <h2 className="text-2xl font-bold text-foreground">
-                  Hey, it&apos;s me, the maker of everything you just saw.
-                </h2>
-                <p className="mx-auto max-w-[600px] text-lg text-muted-foreground">
-                  If something caught your attention and you have a potential project in mind – I&apos;m a message away.
-                </p>
-              </div>
-              
-              <div className="flex items-center gap-4">
-                <Link href={`mailto:${DATA.contact.email}`}>
-                  <Badge className="flex gap-2 px-3 py-2 text-xs hover:bg-primary/90 transition-colors cursor-pointer">
-                    <Mail className="h-4 w-4" />
-                    Send email
-                  </Badge>
-                </Link>
-              </div>
-            </div>
-          </BlurFade>
         </div>
       </section>
     </main>
