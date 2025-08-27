@@ -83,7 +83,7 @@ export default function Page() {
                   HOW CAN I HELP YOU
                 </p>
                 <h2 className="text-3xl font-bold tracking-tight">
-                  I get hired to design, fix or scale SaaS products
+                  Driving Business Growth through Product Strategy, Scalable Design & Technology
                 </h2>
               </div>
             </BlurFade>

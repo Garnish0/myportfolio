@@ -263,11 +263,12 @@ const PillNav: React.FC<PillNavProps> = ({
 
   return (
     <div className="fixed top-[1em] z-[1000] w-full left-0 flex justify-center">
-      <nav
-        className={`max-w-4xl w-full flex items-center justify-between box-border px-6 ${className}`}
-        aria-label="Primary"
-        style={cssVars}
-      >
+      <div className="max-w-4xl w-full px-6">
+        <nav
+          className={`w-full flex items-center justify-between box-border py-3 px-4 rounded-full backdrop-blur-md bg-background/80 border border-border/50 ${className}`}
+          aria-label="Primary"
+          style={cssVars}
+        >
         {/* Left side - Name and Avatar */}
         <div className="flex items-center gap-3">
           <img
@@ -403,6 +404,7 @@ const PillNav: React.FC<PillNavProps> = ({
           </button>
         </div>
       </nav>
+      </div>
 
       <div
         ref={mobileMenuRef}
