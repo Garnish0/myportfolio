@@ -178,101 +178,49 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="results">
-        <div className="mx-auto w-full max-w-5xl px-4 py-16">
-          <div className="text-center space-y-12">
-            <BlurFade delay={BLUR_FADE_DELAY * 6}>
-              <div className="space-y-4">
-                <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
-                  WHAT YOU GET WHEN WE WORK TOGETHER
-                </p>
-                <h2 className="text-3xl font-bold tracking-tight">
-                  Design isn't just about aesthetics—it's about delivering real, measurable results. Here's how my design work drives impact for your business:
+      <section id="testimonials">
+        <div className="space-y-12 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 5.75}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
+                  What people say
                 </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Hear from the founders and leaders I&apos;ve worked with
+                </p>
               </div>
-            </BlurFade>
-            
-            <div className="grid grid-cols-1 gap-6 max-w-3xl mx-auto text-left">
-              <BlurFade delay={BLUR_FADE_DELAY * 6.5}>
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                  </div>
-                  <p className="text-muted-foreground">
-                    <span className="font-semibold text-foreground">Reduce churn</span> by designing intuitive user experiences that keep customers engaged.
-                  </p>
-                </div>
-              </BlurFade>
-
-              <BlurFade delay={BLUR_FADE_DELAY * 7}>
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
-                    </svg>
-                  </div>
-                  <p className="text-muted-foreground">
-                    <span className="font-semibold text-foreground">Increase sign-ups</span> with high-converting landing pages tailored to your audience.
-                  </p>
-                </div>
-              </BlurFade>
-
-              <BlurFade delay={BLUR_FADE_DELAY * 7.5}>
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                      <circle cx="8.5" cy="7" r="4"/>
-                      <path d="M20 8v6M23 11h-6"/>
-                    </svg>
-                  </div>
-                  <p className="text-muted-foreground">
-                    <span className="font-semibold text-foreground">Boost retention</span> by crafting seamless mobile and web app designs users love.
-                  </p>
-                </div>
-              </BlurFade>
-
-              <BlurFade delay={BLUR_FADE_DELAY * 8}>
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                    </svg>
-                  </div>
-                  <p className="text-muted-foreground">
-                    <span className="font-semibold text-foreground">Accelerate launches</span> with production-ready, pixel-perfect designs for faster development.
-                  </p>
-                </div>
-              </BlurFade>
-
-              <BlurFade delay={BLUR_FADE_DELAY * 8.5}>
-                <div className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                      <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
-                      <line x1="12" y1="22.08" x2="12" y2="12"/>
-                    </svg>
-                  </div>
-                  <p className="text-muted-foreground">
-                    <span className="font-semibold text-foreground">Drive growth</span> through strategic UX improvements that align with your business goals.
-                  </p>
-                </div>
-              </BlurFade>
             </div>
+          </BlurFade>
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 max-w-6xl mx-auto">
+            {DATA.testimonials.map((testimonial, id) => (
+              <BlurFade
+                key={testimonial.name}
+                delay={BLUR_FADE_DELAY * 5.85 + id * 0.1}
+              >
+                <TestimonialCard
+                  name={testimonial.name}
+                  role={testimonial.role}
+                  company={testimonial.company}
+                  avatar={testimonial.avatar}
+                  content={testimonial.content}
+                  relationship={testimonial.relationship}
+                  date={testimonial.date}
+                />
+              </BlurFade>
+            ))}
           </div>
         </div>
       </section>
+
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-8">
-          <BlurFade delay={BLUR_FADE_DELAY * 9.5}>
+          <BlurFade delay={BLUR_FADE_DELAY * 6.5}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
           <div className="space-y-6">
             {DATA.skillCategories.map((category, categoryId) => (
-              <BlurFade key={category.label} delay={BLUR_FADE_DELAY * 10 + categoryId * 0.1}>
+              <BlurFade key={category.label} delay={BLUR_FADE_DELAY * 7 + categoryId * 0.1}>
                 <div className="space-y-3">
                   <h3 className="text-base font-semibold text-foreground flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-primary"></div>
@@ -280,7 +228,7 @@ export default function Page() {
                   </h3>
                   <div className="flex flex-wrap gap-4">
                     {category.skills.map((skill, skillId) => (
-                      <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 10.5 + categoryId * 0.1 + skillId * 0.02}>
+                      <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 7.5 + categoryId * 0.1 + skillId * 0.02}>
                         <div className="flex items-center gap-3 px-3 py-2 rounded-lg border bg-card hover:bg-muted/50 transition-colors duration-200">
                           <span className="flex-shrink-0">{getSkillIcon(skill.icon)}</span>
                           <span className="text-sm font-medium">{skill.name}</span>
@@ -296,13 +244,13 @@ export default function Page() {
       </section>
       <section id="tech-logos" className="w-full">
         <div className="w-screen relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw]">
-          <BlurFade delay={BLUR_FADE_DELAY * 10.2}>
+          <BlurFade delay={BLUR_FADE_DELAY * 8.2}>
             <div style={{ height: '140px', position: 'relative', overflow: 'hidden', display: 'flex', alignItems: 'center'}}>
               <LogoLoop
                 logos={techLogos}
                 speed={40}
                 direction="left"
-                logoHeight={64}
+                logoHeight={96}
                 gap={40}
                 pauseOnHover
                 scaleOnHover
@@ -316,7 +264,7 @@ export default function Page() {
       </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 10.3}>
+          <BlurFade delay={BLUR_FADE_DELAY * 8.3}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-base">
@@ -343,7 +291,7 @@ export default function Page() {
             {DATA.projects.map((project, id) => (
               <BlurFade
                 key={project.title}
-                delay={BLUR_FADE_DELAY * 10.4 + id * 0.05}
+                delay={BLUR_FADE_DELAY * 8.4 + id * 0.05}
               >
                 <ProjectCard
                   href={project.href}
@@ -355,40 +303,6 @@ export default function Page() {
                   image={project.image}
                   video={project.video}
                   links={project.links}
-                />
-              </BlurFade>
-            ))}
-          </div>
-        </div>
-      </section>
-      <section id="testimonials">
-        <div className="space-y-12 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 11}>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-                  What people say
-                </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Hear from the founders and leaders I&apos;ve worked with
-                </p>
-              </div>
-            </div>
-          </BlurFade>
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 max-w-6xl mx-auto">
-            {DATA.testimonials.map((testimonial, id) => (
-              <BlurFade
-                key={testimonial.name}
-                delay={BLUR_FADE_DELAY * 11.1 + id * 0.1}
-              >
-                <TestimonialCard
-                  name={testimonial.name}
-                  role={testimonial.role}
-                  company={testimonial.company}
-                  avatar={testimonial.avatar}
-                  content={testimonial.content}
-                  relationship={testimonial.relationship}
-                  date={testimonial.date}
                 />
               </BlurFade>
             ))}
