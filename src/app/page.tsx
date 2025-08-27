@@ -4,7 +4,6 @@ import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { TestimonialCard } from "@/components/testimonial-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
 import { Dropdown } from "@/components/ui/dropdown";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
@@ -12,8 +11,8 @@ import { getSkillIcon, Icons } from "@/components/icons";
 import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import Markdown from "react-markdown";
-import { Mail, MessageCircle } from "lucide-react";
+import { HeroButtons } from "@/components/hero-buttons";
+import { Mail } from "lucide-react";
 
 const LogoLoop = dynamic(() => import("@/components/LogoLoop"), {
   ssr: false,
@@ -25,10 +24,6 @@ const BlurText = dynamic(() => import("@/components/BlurText"), {
   loading: () => <div className="h-16 animate-pulse bg-muted/50 rounded" />
 });
 
-const LazyVideo = dynamic(() => import("@/components/LazyVideo"), {
-  ssr: false,
-  loading: () => <div className="animate-pulse bg-muted/50 w-full h-full rounded" />
-});
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -51,40 +46,30 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
-        <div className="mx-auto w-full max-w-4xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            <div className="space-y-6">
-              <div className="flex items-center gap-4">
-                <BlurFade delay={BLUR_FADE_DELAY}>
-                  <Avatar className="size-16 border">
-                    <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                    <AvatarFallback>{DATA.initials}</AvatarFallback>
-                  </Avatar>
-                </BlurFade>
-                <BlurFadeText
-                  delay={BLUR_FADE_DELAY}
-                  className="text-[24px] font-bold tracking-tight"
-                  yOffset={8}
-                  text={`Hi, I'm ${DATA.name} 👋`}
-                />
-              </div>
-              <BlurFadeText
-                className="text-base text-muted-foreground leading-relaxed"
-                delay={BLUR_FADE_DELAY * 1.5}
-                text={DATA.description}
-              />
-            </div>
+        <div className="mx-auto w-full max-w-5xl px-4 py-16">
+          <div className="text-center space-y-8">
+            <BlurFade delay={BLUR_FADE_DELAY}>
+              <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
+                Available for new projects
+              </p>
+            </BlurFade>
             
-            <div className="space-y-6 mt-4">
-              <BlurFade delay={BLUR_FADE_DELAY * 2}>
-                <h2 className="text-xl font-semibold">Working with me</h2>
-              </BlurFade>
-              <BlurFade delay={BLUR_FADE_DELAY * 2.5}>
-                <Markdown className="prose prose-sm max-w-full text-pretty font-sans text-muted-foreground dark:prose-invert prose-p:leading-relaxed">
-                  {DATA.summary}
-                </Markdown>
-              </BlurFade>
-            </div>
+            <BlurFadeText
+              delay={BLUR_FADE_DELAY * 1.5}
+              className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight"
+              yOffset={8}
+              text="Driving Business Growth through Product Strategy, Scalable Design & Technology"
+            />
+            
+            <BlurFadeText
+              delay={BLUR_FADE_DELAY * 2}
+              className="text-base text-muted-foreground leading-relaxed max-w-4xl mx-auto"
+              text="I'm a multidisciplinary product strategist, designer and developer with a track record of transforming early-stage ideas into scalable digital products. Since 2018, I've led startups and businesses in designing and developing apps, dashboards, and AI-driven solutions that drive growth, improve client retention, and unlock new revenue streams. My strength lies at the intersection of business strategy, design, and technology: I shape product roadmaps, write clean code, design intuitive interfaces, and deliver data-driven solutions that teams and users rely on."
+            />
+            
+            <BlurFade delay={BLUR_FADE_DELAY * 2.5}>
+              <HeroButtons />
+            </BlurFade>
           </div>
         </div>
       </section>
