@@ -80,35 +80,6 @@ export default function About() {
           ))}
         </div>
       </section>
-      <section id="skills">
-        <div className="flex min-h-0 flex-col gap-y-8">
-          <BlurFade delay={BLUR_FADE_DELAY * 9.5}>
-            <h2 className="text-xl font-bold">Skills</h2>
-          </BlurFade>
-          <div className="space-y-6">
-            {DATA.skillCategories.map((category, categoryId) => (
-              <BlurFade key={category.label} delay={BLUR_FADE_DELAY * 10 + categoryId * 0.1}>
-                <div className="space-y-3">
-                  <h3 className="text-base font-semibold text-foreground flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-primary"></div>
-                    {category.label}
-                  </h3>
-                  <div className="flex flex-wrap gap-4">
-                    {category.skills.map((skill, skillId) => (
-                      <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 10.5 + categoryId * 0.1 + skillId * 0.02}>
-                        <div className="flex items-center gap-3 px-3 py-2 rounded-lg border bg-card hover:bg-muted/50 transition-colors duration-200">
-                          <span className="flex-shrink-0">{getSkillIcon(skill.icon)}</span>
-                          <span className="text-sm font-medium">{skill.name}</span>
-                        </div>
-                      </BlurFade>
-                    ))}
-                  </div>
-                </div>
-              </BlurFade>
-            ))}
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
