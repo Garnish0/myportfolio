@@ -88,94 +88,88 @@ export default function Page() {
               </div>
             </BlurFade>
             
-            <div className="grid grid-cols-1 gap-4 max-w-lg mx-auto">
+            <div className="grid grid-cols-1 gap-4 max-w-2xl mx-auto">
               <BlurFade delay={BLUR_FADE_DELAY * 3.5}>
-                <div className="bg-card border rounded-xl p-4 space-y-3 text-left hover:shadow-lg transition-shadow">
-                  <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <svg className="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+                <div className="bg-card border rounded-xl px-6 py-5 flex items-start gap-4 text-left hover:shadow-lg transition-shadow">
+                  <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
                     </svg>
                   </div>
                   <div className="space-y-2">
-                    <h3 className="font-semibold text-base">MVP Design for SaaS</h3>
+                    <h3 className="font-semibold text-base">Digital Transformation & Growth Strategy</h3>
                     <p className="text-muted-foreground text-[15px] leading-relaxed">
-                      Hire MVP designers to create an early version of your SaaS product that will be well-received by advisors, investors, and customers alike.
+                      I help businesses create digital platforms and strategies that attract leads, improve retention, and open new revenue streams. From product roadmaps to growth initiatives, I align business goals with scalable solutions.
                     </p>
-                    <div className="inline-block">
-                      <span className="text-xs px-3 py-1 bg-purple-100 text-purple-700 rounded-full">
-                        Recommended for Indie-makers
-                      </span>
-                    </div>
                   </div>
                 </div>
               </BlurFade>
 
               <BlurFade delay={BLUR_FADE_DELAY * 4}>
-                <div className="bg-card border rounded-xl p-4 space-y-3 text-left hover:shadow-lg transition-shadow">
-                  <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                <div className="bg-card border rounded-xl px-6 py-5 flex items-start gap-4 text-left hover:shadow-lg transition-shadow">
+                  <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
-                      <circle cx="12" cy="12" r="3"/>
+                      <path d="M12 2a3 3 0 0 0-3 3c0 1.5-1.5 3-3 3s-3 1.5-3 3 1.5 3 3 3c1.5 0 3 1.5 3 3a3 3 0 0 0 6 0c0-1.5 1.5-3 3-3s3-1.5 3-3-1.5-3-3-3c-1.5 0-3-1.5-3-3a3 3 0 0 0-3-3"/>
                     </svg>
                   </div>
                   <div className="space-y-2">
-                    <h3 className="font-semibold text-base">Product Redesign</h3>
+                    <h3 className="font-semibold text-base">AI Automation & Integration</h3>
                     <p className="text-muted-foreground text-[15px] leading-relaxed">
-                      We'll work together to overhaul your SaaS with a user-centered approach that will increase engagement, retention, and revenue. Say goodbye to a lackluster UX and hello to a product that stands out in the market.
+                      I design and implement AI-powered systems to streamline operations, automate client communication, and unlock efficiencies. From booking systems to CRM automation, I deliver solutions that save time and drive measurable results.
                     </p>
                   </div>
                 </div>
               </BlurFade>
 
               <BlurFade delay={BLUR_FADE_DELAY * 4.5}>
-                <div className="bg-card border rounded-xl p-4 space-y-3 text-left hover:shadow-lg transition-shadow">
-                  <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                <div className="bg-card border rounded-xl px-6 py-5 flex items-start gap-4 text-left hover:shadow-lg transition-shadow">
+                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                      <circle cx="9" cy="7" r="4"/>
-                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                      <line x1="8" y1="21" x2="16" y2="21"/>
+                      <line x1="12" y1="17" x2="12" y2="21"/>
                     </svg>
                   </div>
                   <div className="space-y-2">
-                    <h3 className="font-semibold text-base">Team Extension</h3>
+                    <h3 className="font-semibold text-base">Product Design & Development</h3>
                     <p className="text-muted-foreground text-[15px] leading-relaxed">
-                      I can seamlessly integrate into your product development team and provide solutions to your design challenges.
+                      From early MVPs to mature platforms, I design and build apps, dashboards, and websites that scale. My approach blends clean UX, technical development, and business strategy to deliver products that users adopt and businesses rely on.
                     </p>
                   </div>
                 </div>
               </BlurFade>
 
               <BlurFade delay={BLUR_FADE_DELAY * 5}>
-                <div className="bg-card border rounded-xl p-4 space-y-3 text-left hover:shadow-lg transition-shadow">
-                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                <div className="bg-card border rounded-xl px-6 py-5 flex items-start gap-4 text-left hover:shadow-lg transition-shadow">
+                  <div className="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                      <line x1="16" y1="2" x2="16" y2="6"/>
-                      <line x1="8" y1="2" x2="8" y2="6"/>
-                      <line x1="3" y1="10" x2="21" y2="10"/>
+                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                      <polyline points="7,10.5 12,13.5 17,10.5"/>
+                      <line x1="12" y1="22.08" x2="12" y2="13"/>
                     </svg>
                   </div>
                   <div className="space-y-2">
-                    <h3 className="font-semibold text-base">UX Audit</h3>
+                    <h3 className="font-semibold text-base">SEO, Lead Generation & Retention</h3>
                     <p className="text-muted-foreground text-[15px] leading-relaxed">
-                      I can help you to spot your product's bottlenecks to unlock its fullest potential.
+                      I craft strategies that boost visibility and conversion — from SEO-driven websites to automated lead funnels and retention programs that keep customers engaged.
                     </p>
                   </div>
                 </div>
               </BlurFade>
 
               <BlurFade delay={BLUR_FADE_DELAY * 5.5}>
-                <div className="bg-card border rounded-xl p-4 space-y-3 text-left hover:shadow-lg transition-shadow">
-                  <div className="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center">
-                    <svg className="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M3 3h6v6H3V3zm2 2v2h2V5H5zM11 3h6v6h-6V3zm2 2v2h2V5h-2zM3 11h6v6H3v-6zm2 2v2h2v-2H5zM13 13h2v2h-2v-2zM15 11h2v2h-2v-2zM17 13h2v2h-2v-2zM11 15h2v2h-2v-2zM13 17h2v2h-2v-2zM15 15h2v2h-2v-2zM17 17h2v2h-2v-2z"/>
+                <div className="bg-card border rounded-xl px-6 py-5 flex items-start gap-4 text-left hover:shadow-lg transition-shadow">
+                  <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <circle cx="12" cy="12" r="10"/>
+                      <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                      <line x1="12" y1="17" x2="12.01" y2="17"/>
                     </svg>
                   </div>
                   <div className="space-y-2">
-                    <h3 className="font-semibold text-base">Design System</h3>
+                    <h3 className="font-semibold text-base">Platform Audits & Optimization</h3>
                     <p className="text-muted-foreground text-[15px] leading-relaxed">
-                      Have big plans for scaling your SaaS? I can support you in creating and shaping the design system.
+                      I identify product bottlenecks, design flaws, and workflow inefficiencies, then optimize for usability, retention, and growth. Whether it's a design system, UX audit, or technology integration, I help products perform at their best.
                     </p>
                   </div>
                 </div>
