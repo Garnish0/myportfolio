@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   },
   description: DATA.description,
   icons: {
-    icon: '/favicon.png',
-    shortcut: '/favicon.png',
-    apple: '/favicon.png',
+    icon: '/favicon.png?v=2',
+    shortcut: '/favicon.png?v=2',
+    apple: '/favicon.png?v=2',
   },
   openGraph: {
     title: `${DATA.name}`,
@@ -70,7 +70,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
             <PillNav
-              logo="/favicon.png"
+              logo="/favicon.png?v=2"
               logoAlt="Portfolio Logo"
               items={[
                 { label: 'Home', href: '/' },
