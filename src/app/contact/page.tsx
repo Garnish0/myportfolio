@@ -26,7 +26,7 @@ export default function Contact() {
             />
           </div>
           <p className="text-lg text-gray-600 text-left">
-            I'd like to understand more about your company and project goals. The more context you
+            I&apos;d like to understand more about your company and project goals. The more context you
             provide, the more effective our collaboration will be!
           </p>
         </div>
@@ -35,7 +35,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                What's your name?
+                What&apos;s your name?
               </label>
               <Input
                 id="name"
@@ -46,7 +46,7 @@ export default function Contact() {
             </div>
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                What's your email?
+                What&apos;s your email?
               </label>
               <Input
                 id="email"
@@ -59,7 +59,7 @@ export default function Contact() {
 
           <div>
             <label htmlFor="website" className="block text-sm font-medium text-gray-700 mb-2">
-              What's the website of your company?
+              What&apos;s the website of your company?
             </label>
             <Input
               id="website"
@@ -68,7 +68,7 @@ export default function Contact() {
               className="w-full"
             />
             <p className="text-sm text-gray-500 mt-1">
-              If you don't have a website, please provide either your company name or the LinkedIn page of your company.
+              If you don&apos;t have a website, please provide either your company name or the LinkedIn page of your company.
             </p>
           </div>
 
@@ -91,7 +91,7 @@ export default function Contact() {
             </label>
             <Textarea
               id="objectives"
-              placeholder="Tell me about your site, project requirements, and when you'd like to start."
+              placeholder="Tell me about your site, project requirements, and when you&apos;d like to start."
               className="w-full min-h-[120px]"
             />
           </div>

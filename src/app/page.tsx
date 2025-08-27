@@ -64,7 +64,7 @@ export default function Page() {
             <BlurFadeText
               delay={BLUR_FADE_DELAY * 2}
               className="text-base text-muted-foreground leading-relaxed max-w-4xl mx-auto"
-              text="I'm a multidisciplinary product strategist, designer and developer with a track record of transforming early-stage ideas into scalable digital products. Since 2018, I've led startups and businesses in designing and developing apps, dashboards, and AI-driven solutions that drive growth, improve client retention, and unlock new revenue streams. My strength lies at the intersection of business strategy, design, and technology: I shape product roadmaps, write clean code, design intuitive interfaces, and deliver data-driven solutions that teams and users rely on."
+              text="I&apos;m a multidisciplinary product strategist, designer and developer with a track record of transforming early-stage ideas into scalable digital products. Since 2018, I&apos;ve led startups and businesses in designing and developing apps, dashboards, and AI-driven solutions that drive growth, improve client retention, and unlock new revenue streams. My strength lies at the intersection of business strategy, design, and technology: I shape product roadmaps, write clean code, design intuitive interfaces, and deliver data-driven solutions that teams and users rely on."
             />
             
             <BlurFade delay={BLUR_FADE_DELAY * 2.5}>
@@ -168,7 +168,7 @@ export default function Page() {
                   <div className="space-y-2">
                     <h3 className="font-semibold text-base">Platform Audits & Optimization</h3>
                     <p className="text-muted-foreground text-[15px] leading-relaxed">
-                      I identify product bottlenecks, design flaws, and workflow inefficiencies, then optimize for usability, retention, and growth. Whether it's a design system, UX audit, or technology integration, I help products perform at their best.
+                      I identify product bottlenecks, design flaws, and workflow inefficiencies, then optimize for usability, retention, and growth. Whether it&apos;s a design system, UX audit, or technology integration, I help products perform at their best.
                     </p>
                   </div>
                 </div>

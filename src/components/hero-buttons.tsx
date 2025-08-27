@@ -21,7 +21,7 @@ export function HeroButtons() {
           size="lg" 
           className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-8 py-6 text-base font-medium transition-all duration-200 hover:scale-105"
         >
-          Let's Work Together →
+          Let&apos;s Work Together →
         </Button>
       </Link>
       <Button 
