@@ -264,10 +264,23 @@ const PillNav: React.FC<PillNavProps> = ({
   return (
     <div className="fixed top-[1em] z-[1000] w-full left-0 flex justify-center">
       <nav
-        className={`w-max flex items-center justify-center box-border ${className}`}
+        className={`max-w-4xl w-full flex items-center justify-between box-border px-6 ${className}`}
         aria-label="Primary"
         style={cssVars}
       >
+        {/* Left side - Name and Avatar */}
+        <div className="flex items-center gap-3">
+          <img
+            ref={logoImgRef}
+            src="/img/projects/me.png"
+            alt="Mehdi Massrali"
+            className="w-10 h-10 rounded-full object-cover"
+            onMouseEnter={handleLogoEnter}
+          />
+          <span className="text-foreground font-semibold text-lg">Mehdi Massrali</span>
+        </div>
+
+        {/* Right side - Navigation */}
         <div
           ref={navItemsRef}
           className="relative items-center rounded-full flex"
@@ -366,29 +379,29 @@ const PillNav: React.FC<PillNavProps> = ({
               );
             })}
           </ul>
+          
+          <button
+            ref={hamburgerRef}
+            onClick={toggleMobileMenu}
+            aria-label="Toggle menu"
+            aria-expanded={isMobileMenuOpen}
+            className="md:hidden rounded-full border-0 flex flex-col items-center justify-center gap-1 cursor-pointer p-0 relative ml-[3px]"
+            style={{
+              width: "var(--nav-h)",
+              height: "var(--nav-h)",
+              background: "var(--base, #000)",
+            }}
+          >
+            <span
+              className="hamburger-line w-4 h-0.5 rounded origin-center transition-all duration-[10ms] ease-[cubic-bezier(0.25,0.1,0.25,1)]"
+              style={{ background: "var(--pill-bg, #fff)" }}
+            />
+            <span
+              className="hamburger-line w-4 h-0.5 rounded origin-center transition-all duration-[10ms] ease-[cubic-bezier(0.25,0.1,0.25,1)]"
+              style={{ background: "var(--pill-bg, #fff)" }}
+            />
+          </button>
         </div>
-
-        <button
-          ref={hamburgerRef}
-          onClick={toggleMobileMenu}
-          aria-label="Toggle menu"
-          aria-expanded={isMobileMenuOpen}
-          className="md:hidden rounded-full border-0 flex flex-col items-center justify-center gap-1 cursor-pointer p-0 relative"
-          style={{
-            width: "var(--nav-h)",
-            height: "var(--nav-h)",
-            background: "var(--base, #000)",
-          }}
-        >
-          <span
-            className="hamburger-line w-4 h-0.5 rounded origin-center transition-all duration-[10ms] ease-[cubic-bezier(0.25,0.1,0.25,1)]"
-            style={{ background: "var(--pill-bg, #fff)" }}
-          />
-          <span
-            className="hamburger-line w-4 h-0.5 rounded origin-center transition-all duration-[10ms] ease-[cubic-bezier(0.25,0.1,0.25,1)]"
-            style={{ background: "var(--pill-bg, #fff)" }}
-          />
-        </button>
       </nav>
 
       <div

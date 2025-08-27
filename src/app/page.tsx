@@ -47,7 +47,7 @@ export default function Page() {
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
         <div className="mx-auto w-full max-w-5xl px-4 py-16">
-          <div className="text-center space-y-8">
+          <div className="text-left space-y-8">
             <BlurFade delay={BLUR_FADE_DELAY}>
               <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
                 Available for new projects
@@ -59,7 +59,7 @@ export default function Page() {
               delay={150}
               animateBy="words"
               direction="top"
-              className="text-[36px] font-bold tracking-tight leading-tight text-center justify-center"
+              className="text-[36px] font-bold tracking-tight leading-tight"
             />
             
             <BlurFadeText

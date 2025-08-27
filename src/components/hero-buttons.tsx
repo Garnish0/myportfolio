@@ -15,7 +15,7 @@ export function HeroButtons() {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+    <div className="flex flex-col sm:flex-row gap-4 justify-start items-start pt-4">
       <Link href={`mailto:${DATA.contact.email}`}>
         <Button 
           size="lg" 
