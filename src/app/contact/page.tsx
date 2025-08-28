@@ -87,7 +87,7 @@ export default function Contact() {
               className="text-4xl font-bold"
             />
           </div>
-          <p className="text-lg text-gray-600 text-left">
+          <p className="text-lg font-normal text-gray-600 text-left">
             I&apos;d like to understand more about your company and project goals. The more context you
             provide, the more effective our collaboration will be!
           </p>

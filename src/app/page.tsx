@@ -186,7 +186,7 @@ export default function Page() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
                   What people say
                 </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="text-muted-foreground text-lg font-normal">
                   Hear from the founders and leaders I&apos;ve worked with
                 </p>
               </div>
@@ -276,7 +276,7 @@ export default function Page() {
                     className="text-3xl font-bold tracking-tighter sm:text-5xl text-center justify-center"
                   />
                 </div>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="text-muted-foreground text-lg font-normal">
                   I&apos;ve worked on a variety of projects, from simple
                   websites to complex web applications. Here are a few of my
                   favorites.
