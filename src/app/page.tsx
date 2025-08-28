@@ -12,7 +12,6 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import { HeroButtons } from "@/components/hero-buttons";
 import { Mail } from "lucide-react";
-import GradientText from "@/components/GradientText";
 
 const LogoLoop = dynamic(() => import("@/components/LogoLoop"), {
   ssr: false,
@@ -49,14 +48,9 @@ export default function Page() {
         <div className="mx-auto w-full max-w-5xl px-4 py-16">
           <div className="text-left space-y-8">
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <GradientText
-                colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-                animationSpeed={3}
-                showBorder={false}
-                className="text-sm font-medium uppercase tracking-wider"
-              >
+              <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
                 Available for new projects
-              </GradientText>
+              </p>
             </BlurFade>
             
             <BlurText
