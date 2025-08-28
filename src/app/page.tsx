@@ -43,12 +43,12 @@ const techLogos = [
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-10">
+    <main className="flex flex-col min-h-[100dvh] space-y-0 sm:space-y-10">
       <section id="hero">
         <div className="mx-auto w-full max-w-5xl px-4 py-16">
-          <div className="text-left space-y-4">
+          <div className="text-left">
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
+              <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-4">
                 Available for new projects
               </p>
             </BlurFade>
@@ -58,12 +58,12 @@ export default function Page() {
               delay={150}
               animateBy="words"
               direction="top"
-              className="text-[36px] font-bold tracking-tight leading-tight"
+              className="text-[32px] font-bold tracking-tight leading-tight mb-8 sm:mb-4"
             />
             
             <BlurFadeText
               delay={BLUR_FADE_DELAY * 2}
-              className="text-base text-muted-foreground leading-relaxed max-w-4xl mx-auto"
+              className="text-base text-muted-foreground leading-relaxed max-w-4xl mx-auto mb-4"
               text="I&apos;m a multidisciplinary product strategist, designer and developer with a track record of transforming early-stage ideas into scalable digital products. Since 2018, I&apos;ve led startups and businesses in designing and developing apps, dashboards, and AI-driven solutions that drive growth, improve client retention, and unlock new revenue streams. My strength lies at the intersection of business strategy, design, and technology: I shape product roadmaps, write clean code, design intuitive interfaces, and deliver data-driven solutions that teams and users rely on."
             />
             
@@ -74,7 +74,7 @@ export default function Page() {
         </div>
       </section>
       <section id="services">
-        <div className="mx-auto w-full max-w-5xl px-4 py-16">
+        <div className="mx-auto w-full max-w-5xl px-4 py-2 sm:py-20">
           <div className="text-center space-y-12">
             <BlurFade delay={BLUR_FADE_DELAY * 3}>
               <div className="space-y-4">
