@@ -35,6 +35,8 @@ export async function submitContactForm(data: Omit<ContactSubmission, 'id' | 'cr
   
   console.log('Supabase URL:', url)
   console.log('Supabase Key:', key ? key.substring(0, 20) + '...' : 'Missing')
+  console.log('Environment:', process.env.NODE_ENV)
+  console.log('All env vars:', Object.keys(process.env).filter(k => k.includes('SUPABASE')))
   
   if (!url || !key || url.includes('placeholder') || key.includes('placeholder')) {
     throw new Error('Supabase configuration is missing or using placeholder values. Please check environment variables.')
