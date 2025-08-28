@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
+import GradientText from "@/components/GradientText";
 
 export function HeroButtons() {
   const handleCopyEmail = async () => {
@@ -19,9 +20,16 @@ export function HeroButtons() {
       <Link href={`mailto:${DATA.contact.email}`}>
         <Button 
           size="lg" 
-          className="bg-foreground text-background hover:bg-foreground/90 rounded-full px-8 py-6 text-base font-medium transition-all duration-200 hover:scale-105"
+          className="bg-foreground hover:bg-foreground/90 rounded-full px-8 py-6 text-base font-medium transition-all duration-200 hover:scale-105"
         >
-          Let&apos;s Work Together →
+          <GradientText
+            colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+            animationSpeed={3}
+            showBorder={false}
+            className=""
+          >
+            Let&apos;s Work Together →
+          </GradientText>
         </Button>
       </Link>
       <Button 
