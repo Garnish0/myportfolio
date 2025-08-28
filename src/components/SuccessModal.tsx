@@ -36,10 +36,10 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen, onClose }) => {
       className="fixed inset-0 z-50 p-4"
     >
       <div className="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0">
-        <div className="modal-content bg-white rounded-2xl shadow-2xl max-w-md w-full mx-4 p-8 relative opacity-0">
+        <div className="modal-content bg-background border rounded-2xl shadow-2xl max-w-md w-full mx-4 p-8 relative opacity-0">
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors p-2"
+            className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors p-2"
             aria-label="Close modal"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -59,37 +59,21 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen, onClose }) => {
 
           <div className="text-center">
             <h2 
-              className="font-serif font-normal mb-4"
-              style={{ 
-                color: '#262424',
-                fontSize: '32px',
-                letterSpacing: '-0.04em',
-                lineHeight: '130%'
-              }}
+              className="font-sans font-bold mb-4 text-foreground text-3xl tracking-tight"
             >
               Success!<br />
               <span className="bg-gradient-to-r from-[#00C1FF] to-[#FFAE00] bg-clip-text text-transparent">Form submitted!</span>
             </h2>
 
             <p 
-              className="font-sans font-normal mb-6 leading-relaxed"
-              style={{ color: '#505050' }}
+              className="font-sans text-muted-foreground mb-6 leading-relaxed"
             >
               Thank you for your submission!<br />
               We'll get back to you soon.
             </p>
 
-            <div className="flex items-center justify-center space-x-2 mb-6">
-              <div className="flex -space-x-1">
-                <div className="w-8 h-8 rounded-full border-2 border-white bg-gradient-to-r from-blue-400 to-purple-500"></div>
-                <div className="w-8 h-8 rounded-full border-2 border-white bg-gradient-to-r from-green-400 to-blue-500"></div>
-                <div className="w-8 h-8 rounded-full border-2 border-white bg-gradient-to-r from-purple-400 to-pink-500"></div>
-                <div className="w-8 h-8 rounded-full border-2 border-white bg-gradient-to-r from-yellow-400 to-orange-500"></div>
-                <div className="w-8 h-8 rounded-full border-2 border-white bg-gradient-to-r from-pink-400 to-red-500"></div>
-              </div>
-            </div>
 
-            <p className="text-sm font-medium" style={{ color: '#505050' }}>
+            <p className="text-sm font-medium text-muted-foreground">
               You're in great company with <span className="bg-gradient-to-r from-[#00C1FF] to-[#FFAE00] bg-clip-text text-transparent font-semibold">thousands</span> of others!
             </p>
           </div>
