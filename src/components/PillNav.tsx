@@ -284,7 +284,7 @@ const PillNav: React.FC<PillNavProps> = ({
         {/* Right side - Navigation */}
         <div
           ref={navItemsRef}
-          className="relative items-center rounded-full flex"
+          className="relative items-center rounded-full hidden md:flex"
           style={{
             height: "var(--nav-h)",
             background: "var(--base, #000)",
@@ -381,18 +381,21 @@ const PillNav: React.FC<PillNavProps> = ({
             })}
           </ul>
           
-          <button
-            ref={hamburgerRef}
-            onClick={toggleMobileMenu}
-            aria-label="Toggle menu"
-            aria-expanded={isMobileMenuOpen}
-            className="md:hidden rounded-full border-0 flex flex-col items-center justify-center gap-1 cursor-pointer p-0 relative ml-[3px]"
-            style={{
-              width: "var(--nav-h)",
-              height: "var(--nav-h)",
-              background: "var(--base, #000)",
-            }}
-          >
+        </div>
+
+        {/* Mobile hamburger menu - separate from desktop nav */}
+        <button
+          ref={hamburgerRef}
+          onClick={toggleMobileMenu}
+          aria-label="Toggle menu"
+          aria-expanded={isMobileMenuOpen}
+          className="md:hidden rounded-full border-0 flex flex-col items-center justify-center gap-1 cursor-pointer p-0"
+          style={{
+            width: "var(--nav-h)",
+            height: "var(--nav-h)",
+            background: "var(--base, #000)",
+          }}
+        >
             <span
               className="hamburger-line w-4 h-0.5 rounded origin-center transition-all duration-[10ms] ease-[cubic-bezier(0.25,0.1,0.25,1)]"
               style={{ background: "var(--pill-bg, #fff)" }}
@@ -402,7 +405,6 @@ const PillNav: React.FC<PillNavProps> = ({
               style={{ background: "var(--pill-bg, #fff)" }}
             />
           </button>
-        </div>
       </nav>
       </div>
 
