@@ -276,7 +276,7 @@ export default function Contact() {
           <Button 
             type="submit" 
             disabled={isSubmitting}
-            className="w-full bg-black text-white hover:bg-gray-800 h-12 text-base font-medium disabled:opacity-50"
+            className="w-full bg-black text-white hover:bg-gray-800 h-12 text-base font-medium disabled:opacity-50 rounded-lg"
           >
             {isSubmitting ? 'Sending...' : 'Send an inquiry'}
           </Button>
