@@ -69,12 +69,12 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen, onClose }) => {
               className="font-sans text-muted-foreground mb-6 leading-relaxed"
             >
               Thank you for your submission!<br />
-              We'll get back to you soon.
+              We&apos;ll get back to you soon.
             </p>
 
 
             <p className="text-sm font-medium text-muted-foreground">
-              You're in great company!
+              You&apos;re in great company!
             </p>
           </div>
         </div>
