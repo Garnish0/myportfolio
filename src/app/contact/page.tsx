@@ -8,6 +8,8 @@ import { submitContactForm } from "@/lib/supabase";
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import GradientText from "@/components/GradientText";
+import SuccessModal from "@/components/SuccessModal";
+import Confetti from "@/components/Confetti";
 
 const BlurText = dynamic(() => import("@/components/BlurText"), {
   ssr: false,
@@ -26,6 +28,8 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState('');
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
@@ -56,7 +60,12 @@ export default function Contact() {
         referral_person: formData.referralPerson
       });
 
-      setSubmitMessage('Thank you! Your inquiry has been submitted successfully.');
+      // Show success modal and confetti with a slight delay
+      setTimeout(() => {
+        setShowConfetti(true);
+        setShowSuccessModal(true);
+      }, 300);
+
       setFormData({
         name: '',
         email: '',
@@ -72,6 +81,11 @@ export default function Contact() {
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  const handleCloseModal = () => {
+    setShowSuccessModal(false);
+    setShowConfetti(false);
   };
 
   return (
@@ -291,6 +305,18 @@ export default function Contact() {
             )}
           </Button>
         </form>
+
+        {/* Success Modal */}
+        <SuccessModal
+          isOpen={showSuccessModal}
+          onClose={handleCloseModal}
+        />
+
+        {/* Confetti Animation */}
+        <Confetti 
+          isActive={showConfetti} 
+          onComplete={() => setShowConfetti(false)}
+        />
       </div>
     </div>
   );
