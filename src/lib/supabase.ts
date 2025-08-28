@@ -3,7 +3,13 @@ import { createClient } from '@supabase/supabase-js'
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co'
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key'
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey)
+// Create client with proper error handling
+export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
+  auth: {
+    autoRefreshToken: false,
+    persistSession: false
+  }
+})
 
 export type ContactSubmission = {
   id?: string
@@ -19,8 +25,14 @@ export type ContactSubmission = {
 
 export async function submitContactForm(data: Omit<ContactSubmission, 'id' | 'created_at'>) {
   // Check if we have proper Supabase configuration at runtime
-  if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
-    throw new Error('Supabase configuration is missing. Please contact support.')
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  
+  console.log('Supabase URL:', url ? 'Set' : 'Missing')
+  console.log('Supabase Key:', key ? 'Set' : 'Missing')
+  
+  if (!url || !key || url.includes('placeholder') || key.includes('placeholder')) {
+    throw new Error('Supabase configuration is missing or using placeholder values. Please check environment variables.')
   }
 
   const { data: result, error } = await supabase
@@ -29,6 +41,7 @@ export async function submitContactForm(data: Omit<ContactSubmission, 'id' | 'cr
     .select()
 
   if (error) {
+    console.error('Supabase error:', error)
     throw new Error(error.message)
   }
 
