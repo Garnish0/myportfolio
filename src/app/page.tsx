@@ -267,9 +267,6 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 8.3}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-base">
-                  And a lot more...
-                </div>
                 <div className="flex justify-center items-center">
                   <BlurText
                     text="Check out my latest work"

@@ -7,6 +7,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { submitContactForm } from "@/lib/supabase";
 import { useState } from "react";
 import dynamic from "next/dynamic";
+import GradientText from "@/components/GradientText";
 
 const BlurText = dynamic(() => import("@/components/BlurText"), {
   ssr: false,
@@ -278,7 +279,16 @@ export default function Contact() {
             disabled={isSubmitting}
             className="w-full bg-black text-white hover:bg-gray-800 h-12 text-base font-medium disabled:opacity-50 rounded-lg"
           >
-            {isSubmitting ? 'Sending...' : 'Send an inquiry'}
+            {isSubmitting ? 'Sending...' : (
+              <GradientText
+                colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                animationSpeed={3}
+                showBorder={false}
+                className=""
+              >
+                Send an inquiry
+              </GradientText>
+            )}
           </Button>
         </form>
       </div>

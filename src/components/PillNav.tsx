@@ -265,7 +265,7 @@ const PillNav: React.FC<PillNavProps> = ({
     <div className="fixed top-[1em] z-[1000] w-full left-0 flex justify-center">
       <div className="max-w-4xl w-full px-6">
         <nav
-          className={`w-full flex items-center justify-between box-border py-3 px-4 rounded-full backdrop-blur-md bg-background/80 border border-border/50 ${className}`}
+          className={`w-full flex items-center justify-between box-border py-2 px-4 rounded-full backdrop-blur-md bg-background/80 border border-border/50 ${className}`}
           aria-label="Primary"
           style={cssVars}
         >

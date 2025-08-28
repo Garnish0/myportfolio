@@ -17,7 +17,7 @@ export function HeroButtons() {
 
   return (
     <div className="flex flex-col sm:flex-row gap-4 justify-start items-start pt-4">
-      <Link href={`mailto:${DATA.contact.email}`}>
+      <Link href="/contact">
         <Button 
           size="lg" 
           className="bg-foreground hover:bg-foreground/90 rounded-full px-8 py-6 text-base font-medium transition-all duration-200 hover:scale-105"
