@@ -8,6 +8,11 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
   auth: {
     autoRefreshToken: false,
     persistSession: false
+  },
+  global: {
+    headers: {
+      'Content-Type': 'application/json'
+    }
   }
 })
 
@@ -28,8 +33,8 @@ export async function submitContactForm(data: Omit<ContactSubmission, 'id' | 'cr
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL
   const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
   
-  console.log('Supabase URL:', url ? 'Set' : 'Missing')
-  console.log('Supabase Key:', key ? 'Set' : 'Missing')
+  console.log('Supabase URL:', url)
+  console.log('Supabase Key:', key ? key.substring(0, 20) + '...' : 'Missing')
   
   if (!url || !key || url.includes('placeholder') || key.includes('placeholder')) {
     throw new Error('Supabase configuration is missing or using placeholder values. Please check environment variables.')
