@@ -33,7 +33,7 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen, onClose }) => {
   return (
     <div 
       ref={modalRef}
-      className="fixed inset-0 z-50 p-4"
+      className="fixed inset-0 z-[1001] p-4"
     >
       <div className="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0">
         <div className="modal-content bg-background border rounded-2xl shadow-2xl max-w-md w-full mx-4 p-8 relative opacity-0">
@@ -62,7 +62,7 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen, onClose }) => {
               className="font-sans font-bold mb-4 text-foreground text-3xl tracking-tight"
             >
               Success!<br />
-              <span className="bg-gradient-to-r from-[#00C1FF] to-[#FFAE00] bg-clip-text text-transparent">Form submitted!</span>
+              <span className="bg-gradient-to-r from-[#40ffaa] via-[#4079ff] to-[#40ffaa] bg-clip-text text-transparent">Form submitted!</span>
             </h2>
 
             <p 
@@ -74,7 +74,7 @@ const SuccessModal: React.FC<SuccessModalProps> = ({ isOpen, onClose }) => {
 
 
             <p className="text-sm font-medium text-muted-foreground">
-              You're in great company with <span className="bg-gradient-to-r from-[#00C1FF] to-[#FFAE00] bg-clip-text text-transparent font-semibold">thousands</span> of others!
+              You're in great company!
             </p>
           </div>
         </div>
