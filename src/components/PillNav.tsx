@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { gsap } from "gsap";
 
 export type PillNavItem = {
@@ -39,6 +40,7 @@ const PillNav: React.FC<PillNavProps> = ({
   onMobileMenuClick,
   initialLoadAnimation = true,
 }) => {
+  const pathname = usePathname();
   const resolvedPillTextColor = pillTextColor ?? baseColor;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const circleRefs = useRef<Array<HTMLSpanElement | null>>([]);
@@ -325,7 +327,7 @@ const PillNav: React.FC<PillNavProps> = ({
             style={{ gap: "var(--pill-gap)" }}
           >
             {items.map((item, i) => {
-              const isActive = activeHref === item.href;
+              const isActive = pathname === item.href;
 
               const pillStyle: React.CSSProperties = {
                 background: "var(--pill-bg, #fff)",

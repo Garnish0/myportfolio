@@ -78,7 +78,6 @@ export default function RootLayout({
                 { label: 'Portfolio', href: '/services' },
                 { label: 'Contact', href: '/contact' }
               ]}
-              activeHref="/"
               className="custom-nav"
               ease="power2.easeOut"
               baseColor="#000000"
