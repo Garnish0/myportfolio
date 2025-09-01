@@ -90,6 +90,24 @@ export default function Page() {
             <div className="grid grid-cols-1 gap-4 max-w-2xl mx-auto">
               <BlurFade delay={BLUR_FADE_DELAY * 3.5}>
                 <div className="bg-card border rounded-xl px-6 py-5 flex items-start gap-4 text-left hover:shadow-lg transition-shadow">
+                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                      <line x1="8" y1="21" x2="16" y2="21"/>
+                      <line x1="12" y1="17" x2="12" y2="21"/>
+                    </svg>
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="font-semibold text-base">Product Design & Development</h3>
+                    <p className="text-muted-foreground text-[15px] leading-relaxed">
+                      From early MVPs to mature platforms, I design and build apps, dashboards, and websites that scale. My approach blends clean UX, technical development, and business strategy to deliver products that users adopt and businesses rely on.
+                    </p>
+                  </div>
+                </div>
+              </BlurFade>
+
+              <BlurFade delay={BLUR_FADE_DELAY * 4}>
+                <div className="bg-card border rounded-xl px-6 py-5 flex items-start gap-4 text-left hover:shadow-lg transition-shadow">
                   <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
@@ -104,7 +122,7 @@ export default function Page() {
                 </div>
               </BlurFade>
 
-              <BlurFade delay={BLUR_FADE_DELAY * 4}>
+              <BlurFade delay={BLUR_FADE_DELAY * 4.5}>
                 <div className="bg-card border rounded-xl px-6 py-5 flex items-start gap-4 text-left hover:shadow-lg transition-shadow">
                   <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -115,24 +133,6 @@ export default function Page() {
                     <h3 className="font-semibold text-base">AI Automation & Integration</h3>
                     <p className="text-muted-foreground text-[15px] leading-relaxed">
                       I design and implement AI-powered systems to streamline operations, automate client communication, and unlock efficiencies. From booking systems to CRM automation, I deliver solutions that save time and drive measurable results.
-                    </p>
-                  </div>
-                </div>
-              </BlurFade>
-
-              <BlurFade delay={BLUR_FADE_DELAY * 4.5}>
-                <div className="bg-card border rounded-xl px-6 py-5 flex items-start gap-4 text-left hover:shadow-lg transition-shadow">
-                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-                      <line x1="8" y1="21" x2="16" y2="21"/>
-                      <line x1="12" y1="17" x2="12" y2="21"/>
-                    </svg>
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="font-semibold text-base">Product Design & Development</h3>
-                    <p className="text-muted-foreground text-[15px] leading-relaxed">
-                      From early MVPs to mature platforms, I design and build apps, dashboards, and websites that scale. My approach blends clean UX, technical development, and business strategy to deliver products that users adopt and businesses rely on.
                     </p>
                   </div>
                 </div>

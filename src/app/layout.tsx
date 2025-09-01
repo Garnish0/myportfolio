@@ -84,6 +84,7 @@ export default function RootLayout({
               pillColor="#ffffff"
               hoveredPillTextColor="#ffffff"
               pillTextColor="#000000"
+              initialLoadAnimation={false}
             />
             {children}
             <Navbar />
