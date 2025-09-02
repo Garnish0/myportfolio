@@ -90,8 +90,8 @@ export default function Page() {
             <div className="grid grid-cols-1 gap-4 max-w-2xl mx-auto">
               <BlurFade delay={BLUR_FADE_DELAY * 3.5}>
                 <div className="bg-card border rounded-xl px-6 py-5 flex items-start gap-4 text-left hover:shadow-lg transition-shadow">
-                  <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
                       <line x1="8" y1="21" x2="16" y2="21"/>
                       <line x1="12" y1="17" x2="12" y2="21"/>
@@ -108,8 +108,8 @@ export default function Page() {
 
               <BlurFade delay={BLUR_FADE_DELAY * 4}>
                 <div className="bg-card border rounded-xl px-6 py-5 flex items-start gap-4 text-left hover:shadow-lg transition-shadow">
-                  <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
                     </svg>
                   </div>
@@ -124,8 +124,8 @@ export default function Page() {
 
               <BlurFade delay={BLUR_FADE_DELAY * 4.5}>
                 <div className="bg-card border rounded-xl px-6 py-5 flex items-start gap-4 text-left hover:shadow-lg transition-shadow">
-                  <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <path d="M12 2a3 3 0 0 0-3 3c0 1.5-1.5 3-3 3s-3 1.5-3 3 1.5 3 3 3c1.5 0 3 1.5 3 3a3 3 0 0 0 6 0c0-1.5 1.5-3 3-3s3-1.5 3-3-1.5-3-3-3c-1.5 0-3-1.5-3-3a3 3 0 0 0-3-3"/>
                     </svg>
                   </div>
@@ -140,8 +140,8 @@ export default function Page() {
 
               <BlurFade delay={BLUR_FADE_DELAY * 5}>
                 <div className="bg-card border rounded-xl px-6 py-5 flex items-start gap-4 text-left hover:shadow-lg transition-shadow">
-                  <div className="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
                       <polyline points="7,10.5 12,13.5 17,10.5"/>
                       <line x1="12" y1="22.08" x2="12" y2="13"/>
@@ -158,11 +158,10 @@ export default function Page() {
 
               <BlurFade delay={BLUR_FADE_DELAY * 5.5}>
                 <div className="bg-card border rounded-xl px-6 py-5 flex items-start gap-4 text-left hover:shadow-lg transition-shadow">
-                  <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <circle cx="12" cy="12" r="10"/>
-                      <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-                      <line x1="12" y1="17" x2="12.01" y2="17"/>
+                  <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <circle cx="11" cy="11" r="8"/>
+                      <path d="M21 21l-4.35-4.35"/>
                     </svg>
                   </div>
                   <div className="space-y-2">
