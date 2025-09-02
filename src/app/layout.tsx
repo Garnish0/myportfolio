@@ -74,7 +74,7 @@ export default function RootLayout({
               logoAlt="Portfolio Logo"
               items={[
                 { label: 'Home', href: '/' },
-                { label: 'About', href: '/about' },
+                { label: 'CV', href: '/about' },
                 { label: 'Portfolio', href: '/services' },
                 { label: 'Contact', href: '/contact' }
               ]}
